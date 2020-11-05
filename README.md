@@ -3,7 +3,7 @@
 
 [Hunspell](http://hunspell.github.io/) is a spell checker and morphological analyzer originally designed for languages with rich morphology and complex word compounding. An open-source software, it is widely used by various web browsers and text editors. This repository contains an implementation of the Kurdish morphological rules and annotated lexicon for the task of spell-checking and morphological analysis. To use these functionalities, see  [Kurdish Language Processing Toolkit (KLPT)](https://github.com/sinaahmadi/klpt). Moreover, this spell-checker is currently being added as an extension to LibreOffice and OpenOffice and therefore, can be used within many text editors and browsers as well.
 
-Please note that the current version only contains Sorani Kurdish data. Kurmanji data will be also provided in a near future. **It should also be note that the current project is the outcome of months of volunteer research and implementation. Please respect the terms of the license below.**
+Please note that the current version only contains Sorani Kurdish data. Kurmanji data will be also provided in a near future. **It should also be noted that the current project is the outcome of months of volunteer research and implementation. Please respect the terms of the license below.**
 
 
 ### Morphological rules
