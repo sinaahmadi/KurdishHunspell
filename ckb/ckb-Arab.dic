@@ -112,7 +112,7 @@
 ئارامگرتن/XN po:verb
 ئاران/N po:noun
 ئارانا/ZN po:propn
-ئاراند/T po:verb is:present_stem_transitive_active st:ئار
+ئاراند/T po:verb is:past_stem_transitive_active st:ئار
 ئاراندرا/I po:verb is:past_stem_intransitive_passive st:ئار
 ئاراندران/XN po:verb is:infinitive_intransitive_passive st:ئار
 ئاراندرێ/V po:verb is:present_stem_intransitive_passive st:ئار
@@ -5660,9 +5660,9 @@
 خواحافیزی/N po:noun
 خواخوا/N po:noun
 خوار/AN po:adj
-خوارد/T po:verb is:past_stem_transitive_active st:خەو
+خوارد/T po:verb is:past_stem_transitive_active st:خو
 خواردن/XN po:verb
-خواردن/XN po:verb is:infinitive_transitive_active st:خەو
+خواردن/XN po:verb is:infinitive_transitive_active st:خو
 خواردنەوە/XN po:verb
 خواردەمەنی/N po:noun
 خواز/N po:noun
@@ -18733,8 +18733,8 @@
 چوالە/N po:noun
 چوالە/ZN po:propn
 چوالەبادام/N po:noun
-چواند/T po:verb is:past_stem_transitive_active st:چوو
-چواندن/XN po:verb is:infinitive_transitive_active st:چوو
+چواند/T po:verb is:past_stem_transitive_active st:چ
+چواندن/XN po:verb is:infinitive_transitive_active st:چ
 چورت/N po:noun
 چورتاندن/XN po:verb
 چورتدان/XN po:verb
@@ -18743,46 +18743,46 @@
 چوزین/ZN po:propn
 چون/ZN po:propn
 چونگەلە/ZN po:propn
-چوو/I po:verb is:past_stem_intransitive_active st:چوو
+چوو/I po:verb is:past_stem_intransitive_active st:چ
 چوو/ZN po:propn
 چووارتخمە/ZN po:propn
-چوواند/T po:verb is:past_stem_transitive_active st:چوو
+چوواند/T po:verb is:past_stem_transitive_active st:چ
 چوواندن/XN po:verb
-چوواندن/XN po:verb is:infinitive_transitive_active st:چوو
+چوواندن/XN po:verb is:infinitive_transitive_active st:چ
 چووز/N po:noun
-چووز/V po:verb is:present_stem_intransitive_active st:چوو
-چووزا/I po:verb is:past_stem_intransitive_active st:چوو
+چووز/V po:verb is:present_stem_intransitive_active st:چ
+چووزا/I po:verb is:past_stem_intransitive_active st:چ
 چووزان/N po:noun
-چووزان/XN po:verb is:infinitive_intransitive_active st:چوو
+چووزان/XN po:verb is:infinitive_intransitive_active st:چ
 چووزوز/ZN po:propn
 چووزکردن/ZN po:propn
 چووزە/ZN po:propn
 چووزەرە/ZN po:propn
 چووزەشوانە/ZN po:propn
 چوون/XN po:verb
-چوون/XN po:verb is:infinitive_intransitive_active st:چوو
+چوون/XN po:verb is:infinitive_intransitive_active st:چ
 چوونگەلە/ZN po:propn
 چووک/AN po:adj
-چووێن/V po:verb is:present_stem_transitive_active st:چوو
-چووێندرا/I po:verb is:past_stem_intransitive_passive st:چوو
-چووێندران/XN po:verb is:infinitive_intransitive_passive st:چوو
-چووێندرێ/V po:verb is:present_stem_intransitive_passive st:چوو
-چووێنرا/I po:verb is:past_stem_intransitive_passive st:چوو
-چووێنران/XN po:verb is:infinitive_intransitive_passive st:چوو
-چووێنرێ/V po:verb is:present_stem_intransitive_passive st:چوو
+چووێن/V po:verb is:present_stem_transitive_active st:چ
+چووێندرا/I po:verb is:past_stem_intransitive_passive st:چ
+چووێندران/XN po:verb is:infinitive_intransitive_passive st:چ
+چووێندرێ/V po:verb is:present_stem_intransitive_passive st:چ
+چووێنرا/I po:verb is:past_stem_intransitive_passive st:چ
+چووێنران/XN po:verb is:infinitive_intransitive_passive st:چ
+چووێنرێ/V po:verb is:present_stem_intransitive_passive st:چ
 چوچڵە/N po:noun
 چوکڵ/N po:noun
 چوگۆی/ZN po:propn
 چویر/ZN po:propn
 چوین/ZN po:propn
 چویو/ZN po:propn
-چوێن/V po:verb is:present_stem_transitive_active st:چوو
-چوێندرا/I po:verb is:past_stem_intransitive_passive st:چوو
-چوێندران/XN po:verb is:infinitive_intransitive_passive st:چوو
-چوێندرێ/V po:verb is:present_stem_intransitive_passive st:چوو
-چوێنرا/I po:verb is:past_stem_intransitive_passive st:چوو
-چوێنران/XN po:verb is:infinitive_intransitive_passive st:چوو
-چوێنرێ/V po:verb is:present_stem_intransitive_passive st:چوو
+چوێن/V po:verb is:present_stem_transitive_active st:چ
+چوێندرا/I po:verb is:past_stem_intransitive_passive st:چ
+چوێندران/XN po:verb is:infinitive_intransitive_passive st:چ
+چوێندرێ/V po:verb is:present_stem_intransitive_passive st:چ
+چوێنرا/I po:verb is:past_stem_intransitive_passive st:چ
+چوێنران/XN po:verb is:infinitive_intransitive_passive st:چ
+چوێنرێ/V po:verb is:present_stem_intransitive_passive st:چ
 چپاندن/XN po:verb
 چپە/N po:noun
 چپەوسرتە/N po:noun
@@ -21186,7 +21186,7 @@
 کڕرێ/V po:verb is:present_stem_intransitive_passive st:کڕ
 کڕنوو/N po:noun
 کڕنۆش/N po:noun
-کڕی/I po:verb is:past_stem_transitive_active st:کڕ
+کڕی/T po:verb is:past_stem_transitive_active st:کڕ
 کڕیار/AN po:adj
 کڕین/XN po:verb
 کڕین/XN po:verb is:infinitive_transitive_active st:کڕ
