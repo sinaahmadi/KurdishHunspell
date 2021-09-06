@@ -3,9 +3,13 @@
 """
 	Sina Ahmadi (ahmadi.sina@outlook.com)
 	Evaluation script for the paper entitled "Hunspell for Sorani Kurdish Spell Checking and Morphological Analysis"
+	This script evaluates the precisions of a spell checking system in comparison to a gold-standard.
+	The gold-standard file should be a tab-separated file (.tsv) with the following columns in order:
+		- word
+		- corrected form 
 	Kurdish Hunspell Project: https://github.com/sinaahmadi/KurdishHunspell
 	2020-2021
-	Last update on September 5, 2021
+	Last updated on September 7, 2021
 """
 import json 
 from Levenshtein import distance
@@ -63,7 +67,7 @@ def evaluate_Kurdish_hunspell(word):
 	else:
 		return True
 
-def run(test_set, filename, is_baseline=True):
+def run(test_set, filename, is_baseline=True, save_file=True):
 	# Evaluate the baseline system based on the given test set
 	# test_set -> word: gold-standard correction
 	# file_name: name of the output file containing suggestions and evaluations
@@ -103,105 +107,124 @@ def run(test_set, filename, is_baseline=True):
 
 		dataset_evaluated.append("\t".join(entry_eval))
 
+	if save_file:
+		with open('%s_suggestions.json'%filename, 'w', encoding='utf8') as t1_json:    
+		    json.dump(baseline, t1_json, indent=4)
 
-	# with open('%s_baseline_suggestions.json'%filename, 'w', encoding='utf8') as t1_json:    
-	#     json.dump(baseline, t1_json, indent=4)
-
-	# with open("%s_dataset_evaluation.tsv"%filename, "w") as f:
-	# 	f.write("word\tcorrected_gold\tsystem_suggestions\tin_1\tin_3\tin_above_3\n" + "\n".join(dataset_evaluated))
+		with open("%s_evaluation.tsv"%filename, "w") as f:
+			f.write("word\tcorrected_gold\tsystem_suggestions\tin_1\tin_3\tin_above_3\n" + "\n".join(dataset_evaluated))
 
 	return dataset_evaluated
 
-def evaluate(experiments):
+def evaluate(experiments, calculate_PR=False):
 	# given the output of the evaluation of a spell checking system, calculate performance
-	performance = {
-		"accuracy": "",
-		"precision": "",
-		"recall": "",
-		"F1": "",
-		"sugg_1": "",
-		"sugg_3": "",
-		"sugg>_3": ""
-	}
-
+	# measures calculated according to http://www.puk.ac.za/opencms/export/PUK/html/fakulteite/lettere/ctext/Article.RES.VanHuyssteenxEiselenxPuttkammer2004.9.9.9.GBVH.2008-09-13.FinalxSmallx.pdf
+	# lexical precision, lexical recall	
 	confusion = {"TP": 0, "FP": 0, "TN":0, "FN": 0}
+	performance = {
+		"accuracy": 0,
+		"precision": 0,
+		"recall": 0,
+		"F1": 0,
+		"sugg_1": 0,
+		"sugg_3": 0,
+		"sugg>_3": 0
+	}
+	incorrect_cases = 0
+
 	# true positive (TP) for correctly detected correct words.
     # false positive (FP) for incorrectly detected correct words.
     # true negative (TN) for correctly detected incorrect words.
     # false negative (FN) for incorrectly detected incorrect words.
 
 	for i in experiments: # only the first suggestion is taken into account
-		print(i)
 		i = i.split("\t")
-		if i[2] != "detected_correct":
-			if i[1] in i[2].split(","):
-				if i[0] == i[1]:
-					confusion["FP"] += 1
+		if len(i[1]): # this skips the first few words of T2
+			if i[2] != "detected_correct":
+				if i[1] in i[2].split(","):
+					if i[0] == i[1]:
+						confusion["FP"] += 1
+					else:
+						confusion["TN"] += 1
 				else:
-					confusion["TN"] += 1
-			else:
+					if i[0] == i[1]:
+						confusion["FP"] += 1
+					else:
+						confusion["FN"] += 1
+
+			else: #detected_correct
 				if i[0] == i[1]:
-					confusion["FP"] += 1
+					confusion["TP"] += 1
 				else:
 					confusion["FN"] += 1
 
-		else: #detected_correct
-			if i[0] == i[1]:
-				confusion["TP"] += 1
-			else:
-				confusion["FN"] += 1
-
+		# evaluate ranking for the prediction of incorrect words
+		if i[0] != i[1]:
+			incorrect_cases += 1
+			if i[3] == "1":
+				performance["sugg_1"] += 1
+			if i[4] == "1":
+				performance["sugg_3"] += 1
+			if i[5] == "1":
+				performance["sugg>_3"] += 1
 	
-	print(confusion)
-	performance["precision"] = confusion["TP"] / (confusion["TP"] + confusion["FP"]) 
-	performance["recall"] = confusion["TP"] / (confusion["TP"] + confusion["FN"])
-	performance["F1"] = 2 * confusion["TP"] / (2 * confusion["TP"] + confusion["FP"] + confusion["FN"])
-	performance["accuracy"] = (confusion["TP"] + confusion["TN"]) / (confusion["TP"] + confusion["FP"] + confusion["TN"] + confusion["FN"])
+	performance["sugg_1"] = performance["sugg_1"] / incorrect_cases
+	performance["sugg_3"] = performance["sugg_3"] / incorrect_cases
+	performance["sugg>_3"] = performance["sugg>_3"] / incorrect_cases
 
-	# "\t".join(list(confusion.values())) + 
-	print(performance)
+	if calculate_PR:
+		performance["precision"] = confusion["TP"] / (confusion["TP"] + confusion["FP"]) 
+		performance["recall"] = confusion["TP"] / (confusion["TP"] + confusion["FN"])
+		performance["F1"] = 2 * confusion["TP"] / (2 * confusion["TP"] + confusion["FP"] + confusion["FN"])
+		performance["accuracy"] = (confusion["TP"] + confusion["TN"]) / (confusion["TP"] + confusion["FP"] + confusion["TN"] + confusion["FN"])
 
-
-	# for i in experiments:
-	# 	for sugg in {1:3, 3:4, 4:5}
-	# 	i.split("\t")
-
-
+	print("Confusion matrix is: ", confusion)
+	print("System performance: ", performance)
 
 if __name__ == "__main__":
 	# evaluation
+	print("# =================== T1 (Amani's)")
 	test_set = dict()
-	# with open("Kurdish-Spelling-TestSet-Amani.tsv") as f: # Amani's
-	# 	for i in f.read().split("\n")[2:10]:
-	# 		test_set[i.split("\t")[0]] = i.split("\t")[1]
+	with open("Kurdish-Spelling-TestSet-Amani.tsv") as f: # Amani's
+		for i in f.read().split("\n")[2:]:
+			test_set[i.split("\t")[0]] = i.split("\t")[1]
 
-	# # print("Evaluating baseline")
-	# # run(test_set, "T1")
-	# print("Evaluating Hunspell")
-	# spell_checker_output = run(test_set, "T1_hunspell", is_baseline=False)
-	# # evaluate(spell_checker_output)
-	# print(spell_checker_output)
+	print("= Evaluating baseline")
+	spell_checker_output = run(test_set, "T1_baseline")
+	evaluate(spell_checker_output)
 
-	
+	print("= Evaluating Hunspell")
+	spell_checker_output = run(test_set, "T1_hunspell", is_baseline=False)
+	evaluate(spell_checker_output)
+
+	print("\n# =================== T2 (Mahmudi's)")
 	test_set = dict()
 	with open("Kurdish-Spelling-TestSet-NeteweNet.tsv", "r") as f:  # Mahmudi's
-		for i in f.read().split("\n")[10:30]:
+		for i in f.read().split("\n")[2:]:
 			test_set[i.split("\t")[0]] = i.split("\t")[1]
-	# print("Evaluating baseline")
-	# run(test_set, "T2")
-	print("Evaluating Hunspell")
-	spell_checker_output = run(test_set, "T2_hunspell", is_baseline=False)
-	print(spell_checker_output)
-	evaluate(spell_checker_output)
 	
-	# test_set = dict()
-	# with open("Kurdish-Spelling-TestSet-NeteweNet.tsv", "r") as f:  # Mahmudi's
-	# 	for i in f.read().split("\n")[2:]:
-	# 		if i.split("\t")[4] == "0":
-	# 			test_set[i.split("\t")[0]] = i.split("\t")[1]
-	# print("Evaluating baseline")
-	# run(test_set, "T2_nospace")
-	# print("Evaluating Hunspell")
-	# run(test_set, "T2_nospace_hunspell", is_baseline=False)
+	print("= Evaluating baseline")
+	spell_checker_output = run(test_set, "T2_baseline")
+	evaluate(spell_checker_output, calculate_PR=True)
+
+	print("= Evaluating Hunspell")
+	spell_checker_output = run(test_set, "T2_hunspell", is_baseline=False)
+	evaluate(spell_checker_output, calculate_PR=True)
+	print()
+
+	print("\n# =================== T2\\space (Mahmudi's without space)")
+	test_set = dict()
+	with open("Kurdish-Spelling-TestSet-NeteweNet.tsv", "r") as f:  # Mahmudi's
+		for i in f.read().split("\n")[2:]:
+			if i.split("\t")[4] == "0":
+				test_set[i.split("\t")[0]] = i.split("\t")[1]
+
+	print("= Evaluating baseline")
+	spell_checker_output = run(test_set, "T2_nospace_baseline")
+	evaluate(spell_checker_output, calculate_PR=True)
+
+	print("= Evaluating Hunspell")
+	spell_checker_output = run(test_set, "T2_nospace_hunspell", is_baseline=False)
+	evaluate(spell_checker_output, calculate_PR=True)
 		
 
