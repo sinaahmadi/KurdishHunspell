@@ -141,7 +141,7 @@ def evaluate(experiments, calculate_PR=False):
 		i = i.split("\t")
 		if len(i[1]): # this skips the first few words of T2
 			if i[2] != "detected_correct":
-				if i[1] in i[2].split(","):
+				if i[1] in i[2].strip().split(","):
 					if i[0] == i[1]:
 						confusion["FP"] += 1
 					else:
