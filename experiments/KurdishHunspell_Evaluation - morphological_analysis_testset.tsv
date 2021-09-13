@@ -1,0 +1,141 @@
+word	lemma	pos	stem	prefixes	base	suffixes	description
+خەست	خەست	adjective	خەست		خەست		
+توند	توند	adjective	توند		توند		
+بەرز	بەرز	adjective	بەرز		بەرز		
+بەرزە	بەرز	adjective	بەرز		بەرز	ە	
+بەرزەی	بەرز	adjective	بەرز		بەرز		
+جوان	جوان	adjective	جوان		جوان		
+جوانترین	جوان	adjective	جوان		جوان	ترین	
+جوانترینەکە	جوان	adjective	جوان		جوان	ترینەکە	
+جوانترینەکەیان	جوان	adjective	جوان		جوان	ترینەکەیان	
+گورج	گورج	adjective	گورج		گورج		
+گورجتر	گورج	adjective	گورج		گورج	تر	
+کورت	کورت	adjective	کورت		کورت		
+کورتترین	کورت	adjective	کورت		کورت	ترین	
+شیرینن	شیرین	adjective	شیر		شیرین	ن	
+گورجانە	گورج	adverb	گورج		گورج	انە	
+هەموویان	هەموو	adverb	هەموو		هەموو	یان	
+هەمووشیان	هەموو	adverb	هەموو		هەموو	شیان	
+تەنیشت	تەنیشت	adverb	تەنیشت		تەنیشت		
+تەنیشتیدا	تەنیشت	adverb	تەنیشت		تەنیشت	یدا	
+پێیدا	پێ	adverb	پێ		پێ	یدا	
+پێیشیدا	پێ	adverb	پێ		پێ	یشیدا	
+بەزوویی	زوو	adverb	زوو	بە 	زوو	یی	
+بە زوویی	زوو	adverb	زوو	بە 	زوو	یی	
+بەخەستی	خەست	adverb	خەست	بە 	خەست	ی	
+بەتوندی	توند	adverb	توند	بە 	توند	ی	
+خێرایانەی	خێرا	adverb	خێرا		خێرا	یانە	
+ڕووتیی	ڕووت	noun	ڕووت		ڕووتی	ی	
+وێڕا	وێ	adverb	وێ		وێ	ڕا	
+لەخۆڕا	خۆ	adverb	خۆ		لەخۆ	ڕا	
+وێکڕا	وێک	adverb	وێ		وێک	ڕا	
+زوو	زوو	adjective|adverb	زوو		زوو		
+خێرا	خێرا	adjective|adverb	خێرا		خێر	ا	
+بزووتنەوەکەماندا	بزووتنەوە	noun	بزوو		بزووتنەوە	کەماندا	
+بەرپرس	بەرپرس	noun|adjective	پرس		بەرپرس		
+بەرپرسان	بەرپرس	noun	پرس		بەرپرس	ان	
+بەرپرسانەدا	بەرپرس	noun|adjective|adverb	پرس		بەرپرس		
+بیرهێنانەوەیەکی	بیرهێنانەوە	noun	بیر		بیرهێنانەوە	یەکی	
+جیهاندا	جیهان	noun	جیهان		جیهان	دا	
+چاوپێکەوتنەکانیان	چاوپێکەوتن	noun	چاو		چاوپێکەوتن	ەکانیان	
+داخوازییەکان	داخوازی	noun	خواز		داخوازی	یەکان	
+داخوازییەکانیانەوە	داخوازی	noun	خواز		داخوازی	یەکانیانەوە	
+داواکاری	داواکاری	noun	داواکار		داواکار	ی	
+سەرکردایەتی	سەرکردایەتی	noun	سەرکرد		سەرکرد	ایەتی	
+سەرهەڵدانەکە	سەرهەڵدان	noun	سەر		سەرهەڵدان	ەکە	
+سەگگەل	سەگ	noun	سەگ		سەگ	گەل	
+قوڕاوییەکانی	قوڕاوی	noun	قوڕ		قوڕاوی	یەکانی	
+کارەکانییەوە	کار	noun	کار		کار	ەکانییەوە	
+گوڵەکانمان	گوڵ	noun	گوڵ		گوڵ	ەکانمان	
+گوڵێک	گوڵ	noun	گوڵ		گوڵ	ێک	
+گوڵێکیش	گوڵ	noun	گوڵ		گوڵ	ێکیش	
+گوڵێکیشم	گوڵ	noun	گوڵ		گوڵ	ێکیشم	
+گوڵێکیشمت	گوڵ	noun	گوڵ		گوڵ	ێکیشمت	
+هەنارەکانی	هەنار	noun	هەنار		هەنار	ەکانی	
+هەنگاومان	هەنگاو	noun	هەنگاو		هەنگاو	مان	
+هەنگاوەمان	هەنگاو	noun	هەنگاو		هەنگاو	ەمان	
+وانەکانمان	وانە	noun	وانە		وان	ەکانمان	
+وتارێکیشدا	وتار	noun	وتار		وتار	ێکیشدا	
+وڵام	وڵام	noun	وڵام		وڵام		
+بەرپرسانە	بەرپرس	adjective|adverb	بەرپرس		بەرپرس	انە	
+وەستاکان	وەستا	noun|adjective	وەستا		وەستا	کان	
+خۆشەویستت	خۆشەویست	noun|adjective	خۆش		خۆشەویست	ت	
+خۆشەکانیشماندا	خۆشەویستت	noun|adjective	خۆش		خۆشە	کانیشماندا	
+جوانترینیشیان	جوان	noun|adjective	جوان		جوان	ترینیشیان	
+جوانترەکە	جوان	noun|adjective	جوان		جوان	ترەکە	
+سەقامگیر	سەقامگیر	noun|adjective	سەقام		سەقام	گیر	
+تێکۆشانم	تێکۆشان	noun	کۆش		تێکۆشان	م	
+خۆپاراستن	خۆپاراستن	noun|verb	پار		خۆپاراستن		
+وڵام دان	وڵامدان	verb	وڵام		وڵامدان		infinitive|transitive|active
+وڵامدانەوه	وڵامدانەوە	verb	وڵام		وڵامدانەوە		infinitive|transitive|active
+هەڵوەشاندنەوە	هەڵوەشاندنەوە	verb	وەش	هەڵ	وەشاند	نەوە	past|transitive|active
+هەڵدەوەشێت	هەڵوەشاندنەوە	verb	وەش	هەڵدە	وەشێ	ت	present|transitive|active
+داهێنان	داهێنان	verb	هێن	دا	هێنا	ن	past|transitive|active
+دامهێنا	داهێنان	verb	هێن	دام	هێنا		past|transitive|active
+دامهێنابا	داهێنان	verb	هێن	دام	هێنا	با	past|transitive|active
+داشمهێنابا	داهێنان	verb	هێن	داشم	هێنا	با	past|transitive|active
+کردووە	کردن	verb	ک		کرد	ووە	past|transitive|active
+کردووەتەوه	کردن	verb	ک		کرد	ووەتەوە	past|transitive|active
+تێپەڕی	تێپەڕین	verb	پەڕ	تێ	پەڕ	ی	past|intransitive|active
+تێپەڕیوە	تێپەڕین	verb	پەڕ	تێ	پەڕ	یوە	past|intransitive|active
+گەیشتن	گەیشتن	verb	گە		گەیشت	ن	past|intransitive|active
+گەیشتم	گەیشتن	verb	گە		گەیشت	م	past|intransitive|active
+گەیشتمێ	گەیشتن	verb	گە		گەیشت	مێ	past|intransitive|active
+دەپرسێت	پرسین	verb	پرس	دە	پرس	ێت	present|intransitive|active
+دەشپرسێت	پرسین	verb	پرس	دەش	پرس	ێت	present|intransitive|active
+دەڵێ	کوتن|وتن	verb	ڵ	دە	ڵێ		present|intransitive|active
+دەشڵێ	کوتن|وتن	verb	ڵ	دەش	ڵێ		present|intransitive|active
+دەبا	بردن|بوون	verb	ب|ب	دە	با		
+ئەبا	بردن|بوون	verb	ب|ب	نە	با		
+دەبات	بردن	verb	ب	دە	با	ت	
+دەباتە	بردن	verb	ب	دە	با	تە	
+دەمباتە	بردن	verb	ب	دەم	با	تە	
+نەمبینی	بینین	verb	بین	نەم	بین	ی	past|transitive|active
+نەشمبیننەوە	بینین	verb	بین	نەشم	بین	نەوە	
+نەشیانبینیبووم	بینین	verb	بین		قرتاند		
+قرتاند	قرتاندن	verb	قرت		قرتاند	وویانە	past|transitive|active
+قرتاندوویانە	قرتاندن	verb	قرت		قرتاند	وویانە	past|transitive|active
+قرتاندوویەتی	قرتاندن	verb	قرت		قرتاند	وویەتی	past|transitive|active
+وەستێندراوە	وەستێندران	verb	وەست		وەستێندرا	وە	past|intransitive_passive
+وەستاوەتەوە	وەستان	verb	وەست		وەستا	وەتەوە	past|intransitive|active
+سووتاندم	سووتاندن	verb	سووت		سووتاند	م	past|transitive|active
+دەردەکەوێ	دەرکەوتن	verb	کەو	دەردە	کەو	ێ	present|intransitive|active
+دامدەسووتاندن	داسووتاندن	verb	سووت	دامدە	سووتاند	ن	past|transitive|active
+کڕیومانە	کڕین	verb	کڕ		کڕی	ومانە	past|transitive|active
+کڕیومنەتەوە	کڕین	verb	کڕ		کڕی	ومنەتەوە	past|transitive|active
+خواردوومانەتەوە	خواردنەوە	verb	خو		خوارد	وومانەتەوە	past|transitive|active
+دیتبووتان	دیتن	verb	دی		دیت	بووتان	past|transitive|active
+دامسووتاندبێتن	داسووتاندن	verb	سووت	دام	سووتاند	بێتن	past|transitive|active
+نەدەهات	هاتن	verb	هات	نەدە	هات		past|intransitive|active
+دیتبایانین	دیتن	verb	دی		دیت	بایانین	past|transitive|active
+دیتبایانمەوە	دیتن	verb	دی		دیت	بایانمەوە	past|transitive|active
+سووتاندەوە	سووتاندەوە	verb	سووت		سووتاند	ەوە	past|transitive|active
+بتسووتاندایە	سووتاندن	verb	سووت	بت	سووتاند	ایە	past|transitive|active
+ئەچوو	چوون	verb	چ	نە	چوو		past|intransitive|active
+هەڵکەندبوو	هەڵکەندن	verb	کەن	هەڵ	کەند	بوو	past|transitive|active
+وەرە	هاتن	verb	هات		وەر	ە	present|intransitive|active
+ئەنوێنێ	نواندن	verb	نو	ئە	نوێن	ێ	present|transitive|active
+بیندرا	بینین	verb	بین		بین	درا	past|intransitive_passive
+بینراون	بینران	verb	بین		بینرا	ون	past|intransitive_passive
+چووینەوە	چوون	verb	چ		چوو	ینەوە	past|intransitive|active
+بردینییەوە	بردن	verb	ب		برد	ینییەوە	past|transitive|active
+دەسووڕانەوە	سووڕانەوە	verb	سووڕ	دە	سووڕا	نەوە	past|intransitive|active
+دەسووڕایەوە	سووڕانەوە	verb	سووڕ	دە	سووڕا	یەوە	past|intransitive|active
+دەسووڕێت	سووڕان	verb	سووڕ	دە	سووڕ	ێت	present|intransitive|active
+دەسووڕێتەوە	سووڕانەوە	verb	سووڕ	دە	سووڕ	ێتەوە	present|intransitive|active
+دەسووڕێنەوە	سووڕانەوە	verb	سووڕ	دە	سووڕێن	ەوە	present|transitive|active
+دەپرسێت	پرسین	verb	پرس	دە	پرس	ێت	present|intransitive|active
+بڵێ	کوتن|وتن	verb	کو|و		بڵێ		present|intransitive|active
+ئەفرۆشێت	فرۆشتن	verb	فرۆ	ئە	فرۆش	ێت	present|transitive|active
+دەمخوارد	خواردن	verb	خو	دەم	خوارد		past|transitive|active
+دەمخواست	خواستن	verb	خواس	دەم	خواست		past|transitive|active
+دەمخوێند	خوێندن	verb	خوێ	دەم	خوێند		past|transitive|active
+دەمخوێندنەوە	خوێندن	verb	خوێ	دەم	خوێند	نەوە	past|transitive|active
+دەمخوێندەوە	خوێندن	verb	خوێ	دەم	خوێند	ەوە	past|transitive|active
+دەمراند	مراندن	verb	مر	دە	مراند		past|transitive|active
+نەمسووتێنن	سووتاندن	verb	سووت	نەم	سووتێن	ن	present|transitive|active
+نەمبینن	بینین	verb	بین	نەم	بین	ن	present|transitive|active
+بمبیننەوە	بینین	verb	بین	بم	بین	نەوە	present|transitive|active
+نەیانبینییەوە	بینین	verb	بین	نەیان	بین	ییەوە	present|transitive|active
+نەیانبینیبووم	بینین	verb	بین	نەیان	بینی	بووم	past|transitive|active
+دەمدا	دان	verb	دا				past|transitive|active

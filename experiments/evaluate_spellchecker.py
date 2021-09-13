@@ -3,7 +3,7 @@
 """
 	Sina Ahmadi (ahmadi.sina@outlook.com)
 	Evaluation script for the paper entitled "Hunspell for Sorani Kurdish Spell Checking and Morphological Analysis"
-	This script evaluates the precisions of a spell checking system in comparison to a gold-standard.
+	This script evaluates the performance of a spell checking system in comparison to a gold-standard.
 	The gold-standard file should be a tab-separated file (.tsv) with the following columns in order:
 		- word
 		- corrected form 
@@ -14,7 +14,6 @@
 import json 
 from Levenshtein import distance
 from klpt.stem import Stem
-from sklearn import metrics
 
 baseline_words = list()
 with open("ALL_ckb_frequency.txt", "r") as f:
@@ -108,10 +107,10 @@ def run(test_set, filename, is_baseline=True, save_file=True):
 		dataset_evaluated.append("\t".join(entry_eval))
 
 	if save_file:
-		with open('%s_suggestions.json'%filename, 'w', encoding='utf8') as t1_json:    
+		with open('spell_checker/%s_suggestions.json'%filename, 'w', encoding='utf8') as t1_json:    
 		    json.dump(baseline, t1_json, indent=4)
 
-		with open("%s_evaluation.tsv"%filename, "w") as f:
+		with open("spell_checker/%s_evaluation.tsv"%filename, "w") as f:
 			f.write("word\tcorrected_gold\tsystem_suggestions\tin_1\tin_3\tin_above_3\n" + "\n".join(dataset_evaluated))
 
 	return dataset_evaluated
