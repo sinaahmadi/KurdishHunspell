@@ -1,3 +1,7 @@
+# A test set to evaluate morphological analyzers in Sorani Kurdish 
+# Copyright Sina Ahmadi (ahmadi.sina@outlook.com)
+# last updated on 13/09/2021
+# https://github.com/sinaahmadi/KurdishHunspell
 word	lemma	pos	stem	prefixes	base	suffixes	description
 خەست	خەست	adjective	خەست		خەست		
 توند	توند	adjective	توند		توند		

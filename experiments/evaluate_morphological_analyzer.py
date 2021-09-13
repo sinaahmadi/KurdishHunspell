@@ -48,7 +48,7 @@ if __name__ == "__main__":
 	correct_segmentation, correct_pos, correct_verb_stemming = 0, 0, 0
 	verb_counter = 0
 	with open("KurdishHunspell_Evaluation - morphological_analysis_testset.tsv", "r") as f:
-		test_set = f.read().split("\n")[1:]
+		test_set = f.read().split("\n")[5:]
 		for i in test_set:
 			i = i.split("\t")
 			analysis = stemmer.analyze(i[0])
@@ -75,8 +75,9 @@ if __name__ == "__main__":
 						# else:
 						# 	print(i)
 			else: 
-				print(i)
+				pass
+				# print(i)
 
-		print("segmentation score: ", correct_segmentation * 100 / (len(test_set)-1))
-		print("POS score: ", correct_pos * 100 / (len(test_set)-1))
+		print("segmentation score: ", correct_segmentation * 100 / (len(test_set)-5))
+		print("POS score: ", correct_pos * 100 / (len(test_set)-5))
 		print("stemming score: ", correct_verb_stemming * 100 / verb_counter)
