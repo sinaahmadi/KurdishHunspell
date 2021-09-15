@@ -62,7 +62,7 @@ The following is an example on how a few lemmata are tagged in our lexicon:
 
 There are two publications regarding this project which should be cited as follows ([paper 1](https://arxiv.org/ftp/arxiv/papers/2109/2109.06374.pdf), [paper 2](https://arxiv.org/ftp/arxiv/papers/2109/2109.03942.pdf)):
 
-	@ article{ahmadi2020Hunspell,
+	@article{ahmadi2020Hunspell,
 		title={{Hunspell for Sorani Kurdish Spell Checking and Morphological Analysis}},
 		author={Ahmadi, Sina},
 		journal={arXiv preprint arXiv:2109.06374},
