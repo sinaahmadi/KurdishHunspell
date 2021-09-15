@@ -1,7 +1,7 @@
 # Hunspell for Kurdish
 ## A morphological analyzer and spell checker for Kurdish in Hunspell
 ---
-### Latest update on June 6th, 2021
+### Latest update on September 15th, 2021
 - [x] Morphosyntactic tags, i.e. `po`
 - [x] Inflectional tags, i.e. `is`
 - [ ] stems, i.e. `st` (verbal stems added in Version 0.1.2)
@@ -60,20 +60,20 @@ The following is an example on how a few lemmata are tagged in our lexicon:
 
 ### Cite this paper
 
-There are two publications regarding this project which can be cited as follows:
+There are two publications regarding this project which should be cited as follows ([paper 1](https://arxiv.org/ftp/arxiv/papers/2109/2109.06374.pdf), [paper 2](https://arxiv.org/ftp/arxiv/papers/2109/2109.03942.pdf):
 
 	@ article{ahmadi2020Hunspell,
-		title={{Hunspell for Sorani Kurdish Spell-checking and Morphological Analysis}},
+		title={{Hunspell for Sorani Kurdish Spell Checking and Morphological Analysis}},
 		author={Ahmadi, Sina},
-		year={2020},
-		publisher={under review}
+		journal={arXiv preprint arXiv:2109.06374},
+		year={2021},
 	}
 	
 	@article{ahmadi2020formalization,
-	  title={{A computational formalization of the Sorani Kurdish morphology}},
-	  author={Ahmadi, Sina},
-	  year={2020},
-	  publisher={under review}
+		title={{A Formal Description of Sorani Kurdish Morphology}},
+		author={Ahmadi, Sina},
+		journal={arXiv preprint arXiv:2109.03942},
+		year={2021}
 	}
 
 ### Contribute
