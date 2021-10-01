@@ -1,0 +1,45 @@
+title: پڕۆژەی هانسپێڵی کوردی
+description: The Kurdish Hunspell Project
+baseurl: "/KurdishHunspell/" # the subpath of your site, e.g. /blog
+url: "https://sinaahmadi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+permalink: pretty
+exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile", "docs"]
+
+# Set a path/url to a logo that will be displayed instead of the title
+#logo: "/assets/images/Kurdish_XeLaTeX_logo.png"
+
+# Enable or disable the site search
+search_enabled: false
+
+# Set the search token separator for hyphenated-word search:
+search_tokenizer_separator: /[\s/]+/
+
+# Enable or disable heading anchors
+heading_anchors: true
+
+# Aux links for the upper right navigation
+aux_links:
+  "Kurdish Hunspell on GitHub":
+    - "//github.com/sinaahmadi/KurdishHunspell//"
+
+# Footer content appears at the bottom of every page's main content
+footer_content: "مافی کۆپی پارێزراوە &copy; 2020-2021  <a href=\"https://sinaahmadi.github.io/\">Sina Ahmadi.</a>"
+
+# Color scheme currently only supports "dark" or nil (default)
+color_scheme: nil
+
+# Google Analytics Tracking (optional)
+# e.g, UA-1234567-89
+ga_tracking: UA-2709176-10
+
+plugins:
+  - jekyll-seo-tag
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false

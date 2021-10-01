@@ -33,5 +33,10 @@ Temporary Items
 
 hidden 
 ckb/lexicon
+docs/.jekyll-cache/*
+docs/logo/*.synctex.gz
+docs/logo/*.log
+docs/logo/*.aux
+
 # End of https://www.toptal.com/developers/gitignore/api/macos
 

@@ -1,0 +1,59 @@
+% created by Sina Ahmadi (ahmadi.sina@outlook.com)
+% last updated on October 1st, 2021
+\documentclass[margin=0.1cm,varwidth,usenames,dvipsnames]{standalone}
+\usepackage{tikz}
+
+\usetikzlibrary{decorations.text,shapes.geometric,backgrounds}
+\usepackage{xcolor}
+\definecolor{navcolor}{HTML}{f5f6fa}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguages{arabic}
+
+\newfontfamily\kurdishfont[Script=Arabic,Scale=1]{Yas}
+\makeatletter
+
+\begin{document}
+\pagecolor{navcolor}
+
+\newcommand\miniTikzUl[2][]
+{%
+\begin{tikzpicture}[baseline=(a.base)]
+  \node[inner sep=0pt] (a) {#2\strut};
+  \begin{scope}[on background layer]
+    \shade[left color=red!100, right color=ForestGreen!90,#1] 
+      ([yshift=-.3mm]a.base east) rectangle ([yshift=-.9mm]a.base west);
+  \end{scope}
+\end{tikzpicture}%
+}
+
+
+\begin{tikzpicture}
+ \pgfmathsetmacro{\radius}{1}
+  \pgfmathsetmacro{\radiussecond}{0.7}
+%  \fill[olive!30] (1,0) rectangle (-1,-1);
+ \fill[Red!90] (1.5,0)  arc [radius=1.5, start angle=0, end angle=180];
+ \fill[NavyBlue!90] (-1.5,0)  arc [radius=1.5, start angle=180, end angle=360];
+%\fill[blue!80!black] (-4,0) rectangle (4,-4);
+
+ \path[decoration={text along path,text color=gray!50,
+                raise = 0ex,
+                text = {|\LARGE\bfseries|Kurdî},
+                text align = center,
+            },
+            decorate
+        ] (185:\radius) arc(180:0:\radius);
+ \path[decoration={text along path,text color=gray!0,
+                raise = -1.2ex,
+                text  along path,
+                text = {|\LARGE\bfseries|{\kurdishfont{کوردی}}},
+                text align = center,
+            },
+            decorate
+        ] (185:\radiussecond) arc(180:360:\radiussecond);
+
+ \node[inner sep=0.1cm, text=black] at (0, 0) {\huge\bfseries \miniTikzUl[opacity=1]{Hunspell\strut}};
+\end{tikzpicture}
+
+\end{document}
