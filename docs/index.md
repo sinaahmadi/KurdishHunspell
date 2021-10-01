@@ -64,7 +64,7 @@ permalink: /
   <tr>
     <td>LibreOffice</td>
     <td><a href="https://github.com/sinaahmadi/KurdishHunspell/blob/main/extensions/ckb.oxt?raw=true/">
-         <img alt="LibreOffice Extension (.oxt)" src="{{ baseurl.url }}/assets/images/oxt_logo.png" width="150" height="70">
+         <img alt="LibreOffice Extension (.oxt)" src="https://raw.githubusercontent.com/sinaahmadi/KurdishHunspell/main/docs/assets/images/oxt_logo.png" width="150" height="70">
       </a>دابەزاندن</td>
   </tr>
   <tr>
