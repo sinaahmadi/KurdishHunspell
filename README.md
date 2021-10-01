@@ -1,12 +1,12 @@
 # Hunspell for Kurdish
 ## A morphological analyzer and spell checker for Kurdish in Hunspell
 ---
-### Latest update on September 15th, 2021
+### Latest update on September 1 October, 2021
 - [x] Morphosyntactic tags, i.e. `po`
 - [x] Inflectional tags, i.e. `is`
 - [ ] stems, i.e. `st` (verbal stems added in Version 0.1.2)
 - [ ] Derivational tags, i.e. `ds`
-- [ ] Creating the plugin for Microsoft Office and LibreOffice
+- [x] 🎉🥳 Creating the plugin for Microsoft Office and LibreOffice (check out [extensions](extensions) folder!)
 
 ---
 
