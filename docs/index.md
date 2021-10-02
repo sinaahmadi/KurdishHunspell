@@ -71,15 +71,15 @@ permalink: /
   </tr>
   <tr>
     <td>Microsoft Office</td>
-    <td>بە زوویی</td>
+    <td>بەم زووانە</td>
   </tr>
   <tr>
-    <td>Mozilla</td>
-    <td>بە زوویی</td>
+    <td>Firefox</td>
+    <td>بەم زووانە</td>
   </tr>
   <tr>
     <td>Chrome</td>
-    <td>بە زوویی</td>
+    <td>بەم زووانە</td>
   </tr>
 </tbody>
 </table>
