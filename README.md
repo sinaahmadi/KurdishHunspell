@@ -1,12 +1,13 @@
 # Hunspell for Kurdish
 ## A morphological analyzer and spell checker for Kurdish in Hunspell
 ---
-### Latest update on September 1 October, 2021
+### Latest update on January 05 January, 2022
 - [x] Morphosyntactic tags, i.e. `po`
 - [x] Inflectional tags, i.e. `is`
-- [ ] stems, i.e. `st` (verbal stems added in Version 0.1.2)
+- [x] ✨ Stems, i.e. `st` (covering all part-of-speech tags from version 0.1.3 / verbal stems added in Version 0.1.2) 
+- [x] ✨ Lemmas, i.e. `lem` 
+- [x] Creating the plugin for Microsoft Office and LibreOffice (check out [extensions](extensions) folder!) 🎉🥳 
 - [ ] Derivational tags, i.e. `ds`
-- [x] 🎉🥳 Creating the plugin for Microsoft Office and LibreOffice (check out [extensions](extensions) folder!)
 
 ---
 
@@ -21,7 +22,7 @@ Sorani Kurdish morphology is notoriously complex. This is not only due to the nu
 
 ![alt text](example.png "Zazaki and Gorani languages within the Indo-European language family")
 
-In order to extract morphological rules, the morphology of Sorani Kurdish is studied in a formal way in the paper entitled [ computational formalization of the Sorani Kurdish morphology](). This formalization allows various morpho-syntactic features of Sorani to be represented as rules which are presented in the [ckb-Arab.aff](ckb/ckb-Arab.aff) file. In version 0.1.0, inflectional and derivational rules regarding verbs, adjectives, adverbs and nouns are implemented. Next versions will include compound forms and further enrichments of the current categories.
+In order to extract morphological rules, the morphology of Sorani Kurdish is studied in a formal way in the paper entitled [ computational formalization of the Sorani Kurdish morphology](). This formalization allows various morpho-syntactic features of Sorani to be represented as rules which are presented in the [ckb-Arab.aff](ckb/ckb-Arab.aff) file. In version 0.1.0, inflectional and derivational rules regarding verbs, adjectives, adverbs and nouns are implemented. In version 0.1.2, the stem of verbs were provided. This is useful for the stemming task where given a word form, its stem can be retrieved, as in 'ڕنیبووم' → 'ڕن'. Following this, in version 0.1.3 the stem of other part-of-speech tags and the lemma form of the verbs, e.g. 'نوێن' → 'نواندن', were added. Therefore, both the stemming and the lemmatization tasks are now fully operational. Next versions will focus on further enrichments of the current categories and also rectifying possible errors.
 
 
 ### Lexicon annotation
@@ -57,7 +58,6 @@ The following is an example on how a few lemmata are tagged in our lexicon:
 	فەڕاشە/N po:noun
 
 
-
 ### Cite this paper
 
 There are two publications regarding this project which should be cited as follows ([paper 1](https://arxiv.org/ftp/arxiv/papers/2109/2109.06374.pdf), [paper 2](https://arxiv.org/ftp/arxiv/papers/2109/2109.03942.pdf)):
@@ -77,7 +77,12 @@ There are two publications regarding this project which should be cited as follo
 	}
 
 ### Contribute
-Are you interested in this project? Please follow the instructions of the [Kurdish Language Processing Toolkit (KLPT)](https://github.com/sinaahmadi/klpt) to get involved. Open-source is fun! 😊
+Are you interested in this project? Please follow the instructions of the [Kurdish Language Processing Toolkit (KLPT)](https://github.com/sinaahmadi/klpt) to get involved. Open-source is fun! 😊 
+
+### Sponsorship
+The current project is the fruit of hundreds of hours of research and development. If this project matters to you, please support me through the Sponsor button on the top of the page. Thanks!
+
+My warmest thanks to [datavaluepeople](www.datavaluepeople.com) and [Build Up](https://howtobuildup.org) for their sponsorship that gave me the motivation to complete adding stems. Version 0.1.3 was made possible thanks to them! ❤️
 
 ### License
 
