@@ -1,7 +1,7 @@
 # Hunspell for Kurdish
 ## A morphological analyzer and spell checker for Kurdish in Hunspell
 ---
-### Latest update on January 05 January, 2022
+### Latest update on January 5th, 2022
 - [x] Morphosyntactic tags, i.e. `po`
 - [x] Inflectional tags, i.e. `is`
 - [x] ✨ Stems, i.e. `st` (covering all part-of-speech tags from version 0.1.3 / verbal stems added in Version 0.1.2) 
