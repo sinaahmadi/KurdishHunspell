@@ -1,37 +1,43 @@
 # Hunspell for Kurdish
-## A morphological analyzer and spell checker for Kurdish in Hunspell
+## A morphological analyzer and spell checker for Kurdish in Hunspell (Sorani and Kurmanji<sup>🆕</sup>)
 ---
-### Latest update on January 5th, 2022
+### Latest update on April 28th, 2022
 - [x] Morphosyntactic tags, i.e. `po`
 - [x] Inflectional tags, i.e. `is`
-- [x] ✨ Stems, i.e. `st` (covering all part-of-speech tags from version 0.1.3 / verbal stems added in Version 0.1.2) 
-- [x] ✨ Lemmas, i.e. `lem` 
-- [x] Creating the plugin for Microsoft Office and LibreOffice (check out [extensions](extensions) folder!) 🎉🥳 
+- [x] Stems, i.e. `st` (covering all part-of-speech tags from version 0.1.3 / verbal stems added in Version 0.1.2) 
+- [x] Lemmas, i.e. `lem` 
+- [x] Creating the plugin for Microsoft Office and LibreOffice (check out [extensions](extensions) folder!)  
+- [x] ✨ Hunspell is now available for Kurmanji Kurdish as well! 🎉🥳
 - [ ] Derivational tags, i.e. `ds`
 
 ---
 
-[Hunspell](http://hunspell.github.io/) is a spell checker and morphological analyzer originally designed for languages with rich morphology and complex word compounding. An open-source software, it is widely used by various web browsers and text editors. This repository contains an implementation of the Kurdish morphological rules and annotated lexicon for the task of spell-checking and morphological analysis. To use these functionalities, see  [Kurdish Language Processing Toolkit (KLPT)](https://github.com/sinaahmadi/klpt). Moreover, this spell-checker is currently being added as an extension to LibreOffice and OpenOffice and therefore, can be used within many text editors and browsers as well.
+[Hunspell](http://hunspell.github.io/) is a spell checker and morphological analyzer originally designed for languages with rich morphology and complex word compounding. An open-source software, it is widely used by various web browsers and text editors. This repository contains an implementation of the Kurdish morphological rules and annotated lexicon for the task of spell-checking and morphological analysis. To use these functionalities, see [Kurdish Language Processing Toolkit (KLPT)](https://github.com/sinaahmadi/klpt). Moreover, this spell-checker is currently being added as an extension to LibreOffice and OpenOffice and therefore, can be used within many text editors and browsers as well.
 
-Please note that the current version only contains Sorani Kurdish data. Kurmanji data will be also provided in a near future. **It should also be noted that the current project is the outcome of months of volunteer research and implementation. Please respect the terms of the license below.**
-
+The project was initially created for Sorani Kurdish in early 2020. As of April 2022, a similar implementation is also provided for Kurmanji. It should be noted that the current project is the outcome of months of volunteer research and implementation. **Please respect the terms of the license below and don't forget to recognize hours of dictionary tagging and extraction of morphological rules!** See below to find out how you can be a sponsor of this project.
 
 ### Morphological rules
 
-Sorani Kurdish morphology is notoriously complex. This is not only due to the number of affixes and clitics, but the way they appear and interact within a word-form. The following is an example on such a complexity for a single-word verb where the base *girt* of the verb *girtin* 'to take, to get' appears with clitics, suffixes and a verbal particle. The placement of the endoclitic *=îş* (in green boxes) and agent marker *=im* (in blue boxes) varies with respect to the base and each other in the verb form.
+Kurdish morphology, particularly that of the Sorani dialect, is notoriously complex. This is not only due to the number of affixes and clitics, but the way they appear and interact within a word-form. The following is an example in Sorani on such a complexity for a single-word verb where the base *girt* of the verb *girtin* 'to take, to get' appears with clitics, suffixes and a verbal particle. The placement of the endoclitic *=îş* (in green boxes) and agent marker *=im* (in blue boxes) varies with respect to the base and each other in the verb form.
 
 ![alt text](example.png "Zazaki and Gorani languages within the Indo-European language family")
 
-In order to extract morphological rules, the morphology of Sorani Kurdish is studied in a formal way in the paper entitled [ computational formalization of the Sorani Kurdish morphology](). This formalization allows various morpho-syntactic features of Sorani to be represented as rules which are presented in the [ckb-Arab.aff](ckb/ckb-Arab.aff) file. In version 0.1.0, inflectional and derivational rules regarding verbs, adjectives, adverbs and nouns are implemented. In version 0.1.2, the stem of verbs were provided. This is useful for the stemming task where given a word form, its stem can be retrieved, as in 'ڕن' → 'ڕنیبووم'. Following this, in version 0.1.3 the stem of other part-of-speech tags and the lemma form of the verbs, e.g. 'نواندن' → 'دەنوێنم', were added. Therefore, both the stemming and the lemmatization tasks are now fully operational. In addition, more lexical entries are added, particularly proper names. Next versions will focus on further enrichments of the current categories and also rectifying possible errors.
+In order to extract morphological rules, the morphology of Kurdish is studied in a formal way in the paper entitled [A Formal Description of Sorani Kurdish Morphology](https://arxiv.org/ftp/arxiv/papers/2109/2109.03942.pdf). This formalization allows various morpho-syntactic features of Kurdish to be represented as rules which are presented in the [ckb-Arab.aff](ckb/ckb-Arab.aff) and [kmr-Latn.aff](kmr/kmr-Latn.aff) files. 
 
+ - Regarding the Sorani implementation, in version 0.1.0, inflectional and derivational rules regarding verbs, adjectives, adverbs and nouns are implemented. In version 0.1.2, the stem of verbs were provided. This is useful for the stemming task where given a word form, its stem can be retrieved, as in 'ڕن' → 'ڕنیبووم'. Following this, in version 0.1.3 the stem of other part-of-speech tags and the lemma form of the verbs, e.g. 'نواندن' → 'دەنوێنم', were added. Therefore, both the stemming and the lemmatization tasks are now fully operational. In addition, more lexical entries are added, particularly proper names. 
+- Regarding the Kurmanji implementation, in version 0.1.0 the structure of the project is created where morphological rules are defined and a dictionary containing over 16000 entries is manually tagged. Kurmanji morphology in comparison to that of Sorani is simpler. This being said, to keep the usage of flags consistent across the project, the same are used in both dialects; for instance, the `I` (intransitive past stem) and `T` (transitive past stem) flags are treated equally even though ergativity in Kurmanji is dealt with differently from Sorani. Stems and lemmas are also available for Kurmanji.
+
+Next versions will focus on further enrichments of the current categories and also rectifying possible errors (please report them).
 
 ### Lexicon annotation
 
 As a rule-based method, Hunspell needs an annotated lexicon to which the morphological rules are applied. To this end, we use the lexicographic material provided by the [FreeDict project](https://freedict.org/) and [Wîkîferheng, the Kurdish Wiktionary](https://ku.wiktionary.org/). In addition, [Wikidata](https://www.wikidata.org) is consulted to extract proper names. The transliteration of the Latin-based script of Kurdish into the Arabic-based one is carried out using [Wergor](https://github.com/sinaahmadi/wergor). Each lemma in the lexicon is manually tagged with part-of-speech, its formation type (derivational/inflectional) and further morphological properties. In addition, composing parts of compound forms are specified using a hyphen. This way, the annotated lexicon is also used within the [Kurdish Tokenization project](https://github.com/sinaahmadi/KurdishTokenization).
 
-According to the morphological rules, lemmata in our lexicons are tagged using the following flags. If the flags don't make much sense to you, the part of speech tags, i.e. `po` flag, will hopefully do as they are provided according to the [Universal Dependency tags](https://universaldependencies.org/u/pos/index.html). The annotated lexicon is available at [ckb-Arab.dic](ckb/ckb-Arab.dic).
+According to the morphological rules, lemmata in our lexicons are tagged using the following flags. If the flags don't make much sense to you, the part of speech tags, i.e. `po` flag, will hopefully do as they are provided according to the [Universal Dependency tags](https://universaldependencies.org/u/pos/index.html). The annotated lexicons are available at [ckb-Arab.dic](ckb/ckb-Arab.dic) and [kmr-Latn.dic](kmr/kmr-Latn.dic).
 
 - `N`: Noun
+- `M`: Masculine noun
+- `F`: Feminine noun
 - `V`: present stem of verbs
 - `I`: past stem of intransitive verbs
 - `T`: past stem of transitive verbs
@@ -48,7 +54,7 @@ According to the morphological rules, lemmata in our lexicons are tagged using t
 - `Z`: proper names
 - `W`: irregular cases like *were* 'come.imp.2s'
 
-The following is an example on how a few lemmata are tagged in our lexicon:
+The following is an example on how a few lemmata are tagged in the Sorani lexicon:
 
 	فەوتێنرا/I po:verb is:past_stem_intransitive_passive
 	فەوتێنران/XN po:verb is:infinitive_intransitive_passive
@@ -57,6 +63,13 @@ The following is an example on how a few lemmata are tagged in our lexicon:
 	فەڕ/N po:noun
 	فەڕاشە/N po:noun
 
+and in the Kurmanji lexicon:
+
+	reng/M po:noun_masc
+	rengand/T po:verb is:past_stem_transitive_active st:reng lem:rengandin
+	rengandin/XN po:verb is:infinitive_transitive_active st:reng lem:rengandin
+	rengarengkirî/AN po:adj
+	rengdarbûyî/AN po:adj
 
 ### Cite this paper
 
