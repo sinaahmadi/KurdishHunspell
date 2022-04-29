@@ -48,7 +48,7 @@ According to the morphological rules, lemmata in our lexicons are tagged using t
 - `D`: interjection
 - `B`: pronouns
 - `E`: numerals
-- `F`: adpositions
+- `P`: adpositions (currently F in Sorani data)
 - `G`: particle
 - `X`: infinitive
 - `Z`: proper names

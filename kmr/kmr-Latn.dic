@@ -222,7 +222,7 @@ alternatîv/F po:noun_fem
 altûn/F po:noun_fem
 alçax/AN po:adj
 alçaxane/AN po:adj
-alî/F po:adp st:alî
+alî/P po:adp st:alî
 alî/I po:verb is:past_stem_intransitive_active st:alî lem:alîn
 alî/M po:noun_masc
 alîgir/AN po:adj
@@ -1167,7 +1167,7 @@ bengînkirî/AN po:adj
 benzîn/F po:noun_fem
 beq/M po:noun_masc
 beqalxane/AN po:adj
-ber/F po:adp st:ber
+ber/P po:adp st:ber
 beraber/AN po:adj
 berabûyî/AN po:adj
 beradayî/AN po:adj
@@ -1374,7 +1374,7 @@ berçavîkirî/AN po:adj
 berê/ANR po:adj_adv
 berêvar/F po:noun_fem
 berî/ANR po:adj_adv
-berî/F po:adp st:berî
+berî/P po:adp st:berî
 berî/F po:noun_fem
 berîk/F po:noun_fem
 berûpişt/R po:adv
@@ -1493,7 +1493,7 @@ beşdarîkirî/AN po:adj
 beşer/F po:noun_fem
 beşeriyet/F po:noun_fem
 beşerkirî/AN po:adj
-bi/F po:adp st:bi
+bi/P po:adp st:bi
 biabagne/AN po:adj
 biaborî/AN po:adj
 biadanî/AN po:adj
@@ -2250,7 +2250,7 @@ bimîx/AN po:adj
 bimû/AN po:adj
 bimûmî/AN po:adj
 bimûz/AN po:adj
-bin/F po:adp st:bin
+bin/P po:adp st:bin
 bin/M po:noun_masc
 binakokî/AN po:adj
 binamûs/AN po:adj
@@ -2345,7 +2345,7 @@ binçavkirin/F po:noun_fem
 binçavkirî/AN po:adj
 binçengane/AN po:adj
 binêm/AN po:adj
-binîya/F po:adp st:binîya
+binîya/P po:adp st:binîya
 binîşan/AN po:adj
 binîşandanî/AN po:adj
 binîşe/AN po:adj
@@ -3063,7 +3063,7 @@ blof/F po:noun_fem
 blog/F po:noun_fem
 blok/F po:noun_fem
 blues/F po:noun_fem
-bo/F po:adp st:bo
+bo/P po:adp st:bo
 bobelat/F po:noun_fem
 bobelatane/AN po:adj
 bodele/AN po:adj
@@ -3181,7 +3181,7 @@ buxwirîn/F po:noun_fem
 buxçik/F po:noun_fem
 Béziers/ZF po:propn
 bê/AN po:adj
-bê/F po:adp st:bê
+bê/P po:adp st:bê
 bêabagne/AN po:adj
 bêabrûkirî/AN po:adj
 bêadanî/AN po:adj
@@ -4702,7 +4702,7 @@ celaqî/AN po:adj
 celeb/M po:noun_masc
 celik/F po:noun_fem
 celx/FM po:noun_fem_masc
-cem/F po:adp st:cem
+cem/P po:adp st:cem
 cem/F po:noun_fem
 cem/M po:noun_masc
 cemabûyî/AN po:adj
@@ -5205,7 +5205,7 @@ daîmîkirî/AN po:adj
 daîre/AN po:adj
 daûrandin/F po:noun_fem
 daşir/F po:noun_fem
-de/F po:adp st:de
+de/P po:adp st:de
 deban/F po:noun_fem
 debar/F po:noun_fem
 debat/F po:noun_fem
@@ -5634,7 +5634,7 @@ deşt/F po:noun_fem
 deştî/AN po:adj
 deşîfre/AN po:adj
 deşîfrekirî/AN po:adj
-di/F po:adp st:di
+di/P po:adp st:di
 dialog/F po:noun_fem
 dibistan/F po:noun_fem
 dibistanî/AN po:adj
@@ -5645,7 +5645,7 @@ didu/AN po:adj
 didu/E po:num st:didu
 Dieppe/ZF po:propn
 difin/F po:noun_fem
-digel/F po:adp st:digel
+digel/P po:adp st:digel
 digelêk/R po:adv
 dih/F po:noun_fem
 dih/R po:adv
@@ -5664,7 +5664,7 @@ dijmin/M po:noun_masc
 dijminane/AN po:adj
 dijminatî/F po:noun_fem
 dijwarî/F po:noun_fem
-dijî/F po:adp st:dijî
+dijî/P po:adp st:dijî
 dijûn/F po:noun_fem
 dikan/F po:noun_fem
 Dikili/ZF po:propn
@@ -8978,7 +8978,7 @@ hundirîn/V po:verb is:present_stem_transitive_active st:hundir lem:hundirandin
 hundirîn/XF po:verb
 hundur/F po:noun_fem
 hundur/M po:noun_masc
-hundurê/F po:adp st:hundurê
+hundurê/P po:adp st:hundurê
 huner/F po:noun_fem
 hunerandin/XF po:verb
 hunerandî/AN po:adj
@@ -9356,10 +9356,10 @@ jest/F po:noun_fem
 jev/R po:adv
 jevneketî/AN po:adj
 jevrevandin/XF po:verb
-ji/F po:adp st:ji
+ji/P po:adp st:ji
 ji/R po:adv
-jialî/F po:adp st:jialî
-jiber/F po:adp st:jiber
+jialî/P po:adp st:jialî
+jiber/P po:adp st:jiber
 jiber/F po:noun_fem
 jiber/R po:adv
 jiberbirin/F po:noun_fem
@@ -9369,7 +9369,7 @@ jiberkirin/F po:noun_fem
 jiberkirî/AN po:adj
 jiberko/C po:sconj st:ji
 jiberku/C po:sconj st:ji
-jibo/F po:adp st:jibo
+jibo/P po:adp st:jibo
 jibîrkirin/F po:noun_fem
 jibîrkirî/AN po:adj
 jiderve/R po:adv
@@ -9456,7 +9456,7 @@ jêp/F po:noun_fem
 jêpirsîn/XF po:verb
 jêqerîn/XF po:verb
 jêqetîn/XF po:verb
-jêr/F po:adp st:jêr
+jêr/P po:adp st:jêr
 jêr/F po:noun_fem
 jêrbarî/F po:noun_fem
 jêrhiş/F po:noun_fem
@@ -9464,7 +9464,7 @@ jêrrakirî/AN po:adj
 jêrzemîn/F po:noun_fem
 jêrîn/AN po:adj
 jêzêdebûyî/AN po:adj
-jî/F po:adp st:jî
+jî/P po:adp st:jî
 jî/I po:verb is:past_stem_intransitive_active st:j lem:jîn
 jî/R po:adv
 jî/V po:verb is:present_stem_intransitive_active st:j lem:jîn
@@ -10828,7 +10828,7 @@ leşker/M po:noun_masc
 leşkerane/AN po:adj
 leşî/AN po:adj
 Lhasa/ZF po:propn
-li/F po:adp st:li
+li/P po:adp st:li
 lib/F po:noun_fem
 lib/M po:noun_masc
 libabûyî/AN po:adj
@@ -10837,7 +10837,7 @@ libasdar/AN po:adj
 libat/F po:noun_fem
 libatkirî/AN po:adj
 libende/AN po:adj
-liber/F po:adp st:liber
+liber/P po:adp st:liber
 liberketî/AN po:adj
 libin/F po:noun_fem
 libinbar/AN po:adj
@@ -10848,13 +10848,13 @@ Libreville/ZF po:propn
 Lichfield/ZF po:propn
 Licê/ZF po:propn
 lidarxistin/F po:noun_fem
-lidijî/F po:adp st:lidijî
+lidijî/P po:adp st:lidijî
 lidûvneçûyî/AN po:adj
 Liechtenstein/ZF po:propn
 ligligand/T po:verb is:past_stem_transitive_active st:liglig lem:ligligandin
 ligligandin/XF po:verb is:infinitive_transitive_active st:liglig lem:ligligandin
 ligligîn/V po:verb is:present_stem_transitive_active st:liglig lem:ligligandin
-ligorî/F po:adp st:ligorî
+ligorî/P po:adp st:ligorî
 lihev/AN po:adj
 lihevbûyî/AN po:adj
 lihevhatîbûyî/AN po:adj
@@ -10869,7 +10869,7 @@ ling/M po:noun_masc
 linger/AN po:adj
 Linnich/ZF po:propn
 lipaşmayîn/F po:noun_fem
-lipey/F po:adp st:lipey
+lipey/P po:adp st:lipey
 lipit/V po:verb is:present_stem_intransitive_active st:lipit lem:lipitîn
 lipitî/I po:verb is:past_stem_intransitive_active st:lipit lem:lipitîn
 lipitîn/XF po:verb is:infinitive_intransitive_active st:lipit lem:lipitîn
@@ -10877,7 +10877,7 @@ liq/F po:noun_fem
 liqatkirî/AN po:adj
 lirê/AN po:adj
 Lisburn/ZF po:propn
-liser/F po:adp st:liser
+liser/P po:adp st:liser
 liv/F po:noun_fem
 liv/V po:verb is:present_stem_intransitive_active st:liv lem:livîn
 livand/T po:verb is:past_stem_transitive_active st:liv lem:livandin
@@ -14052,7 +14052,7 @@ pêgir/AN po:adj
 pêgirbûyî/AN po:adj
 pêgirkirî/AN po:adj
 pêguhorrk/F po:noun_fem
-pêhel/F po:adp st:pêhel
+pêhel/P po:adp st:pêhel
 pêhesandin/F po:noun_fem
 pêhesandî/AN po:adj
 pêhesiyayî/AN po:adj
@@ -15132,7 +15132,7 @@ razdar/AN po:adj
 raziq/AN po:adj
 razîker/AN po:adj
 raêxk/F po:noun_fem
-re/F po:adp st:re
+re/P po:adp st:re
 reaksiyon/F po:noun_fem
 realîze/AN po:adj
 realîzebûyî/AN po:adj
@@ -16139,7 +16139,7 @@ seqimandin/XF po:verb
 seqimîn/F po:noun_fem
 seqimîn/XF po:verb
 seqîn/V po:verb is:present_stem_transitive_active st:seq lem:seqandin
-ser/F po:adp st:ser
+ser/P po:adp st:ser
 ser/M po:noun_masc
 sera/R po:adv
 serabinkirî/AN po:adj
@@ -17913,7 +17913,7 @@ tunebûn/F po:noun_fem
 tunekirin/F po:noun_fem
 turîzm/F po:noun_fem
 tê/B po:pron st:t
-tê/F po:adp st:tê
+tê/P po:adp st:tê
 tê/W po:verb is:come_present_3sg st:t lem:hatin
 têbê/R po:adv
 têbînîkirî/AN po:adj
@@ -18365,7 +18365,7 @@ wehşî/AN po:adj
 weiz/F po:noun_fem
 weizen/F po:noun_fem
 wek/C po:sconj st:wek
-wek/F po:adp st:wek
+wek/P po:adp st:wek
 wekalet/F po:noun_fem
 wekhev/AN po:adj
 wekhevandin/XF po:verb

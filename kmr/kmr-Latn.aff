@@ -13,6 +13,8 @@
 # This file contains morphological rules for Kurmanji Kurdish. In version 0.1.0, inflectional and derivational rules regarding verbs, adjectives, adverbs and nouns are implemented. Next versions will include compound forms and further enrichments of the current categories.
 # Description of the flags which are identitical to those of the Sorani Hunspell (see the same repository):
 #	N: Noun
+#	M: Masculine noun
+#	F: Feminine noun (in Kurmanji)
 #	V: present stem of verbs
 #	I: past stem of intransitive verbs
 #	T: past stem of transitive verbs
@@ -23,7 +25,7 @@
 #	D: interjection
 #	B: pronouns
 #	E: numerals
-#	F: adpositions
+#	P: adpositions (currently F in Sorani data)
 #	G: particle
 #	X: infinitive
 #	Z: proper names
