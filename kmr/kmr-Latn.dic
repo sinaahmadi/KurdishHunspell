@@ -1,4 +1,4 @@
-21267
+21248
 Abbotsford/ZF po:propn
 Aberdeen/ZF po:propn
 abiyotîk/AN po:adj
@@ -2250,8 +2250,6 @@ bimîx/AN po:adj
 bimû/AN po:adj
 bimûmî/AN po:adj
 bimûz/AN po:adj
-bin-av/AN po:adj
-bin-emrîkirî/AN po:adj
 bin/F po:adp st:bin
 bin/M po:noun_masc
 binakokî/AN po:adj
@@ -2502,7 +2500,6 @@ biraz/AN po:adj
 biraştin/F po:noun_fem
 birc/F po:noun_fem
 bircane/AN po:adj
-birde-birdkirî/AN po:adj
 birdikî/AN po:adj
 bire/AN po:adj
 bireftar/AN po:adj
@@ -2693,7 +2690,6 @@ bistem/AN po:adj
 bistîk/F po:noun_fem
 bistûn/AN po:adj
 bisur/AN po:adj
-bisênî-mênî/AN po:adj
 bisîgorta/AN po:adj
 bisîleh/AN po:adj
 bisûc/AN po:adj
@@ -3184,8 +3180,6 @@ buxtankirî/AN po:adj
 buxwirîn/F po:noun_fem
 buxçik/F po:noun_fem
 Béziers/ZF po:propn
-bê-nan-û-xwê/AN po:adj
-bê-êb/AN po:adj
 bê/AN po:adj
 bê/F po:adp st:bê
 bêabagne/AN po:adj
@@ -4187,7 +4181,6 @@ bêsorav/AN po:adj
 bêsoz/AN po:adj
 bêstem/AN po:adj
 bêstûn/AN po:adj
-bêsênî-mênî/AN po:adj
 bêsîgorta/AN po:adj
 bêsîleh/AN po:adj
 bêsîm/AN po:adj
@@ -6221,8 +6214,6 @@ eciqî/I po:verb is:past_stem_intransitive_active st:eciq lem:eciqîn
 eciqîn/F po:noun_fem
 eciqîn/V po:verb is:present_stem_transitive_active st:eciq lem:eciqandin
 eciqîn/XF po:verb is:infinitive_intransitive_active st:eciq lem:eciqîn
-ecêb-ecêb/AN po:adj
-ecêb-ecêbane/AN po:adj
 ecêba/R po:adv
 ecêbe/R po:adv
 ecêbgirtîbûyî/AN po:adj
@@ -7907,7 +7898,6 @@ gêzrandî/AN po:adj
 gêzîkirî/AN po:adj
 gêç/AN po:adj
 gêç/F po:noun_fem
-Gîne-Bissau/ZF po:propn
 Gîne/ZF po:propn
 gîr/F po:noun_fem
 gîrebûyî/AN po:adj
@@ -9012,7 +9002,6 @@ huskirin/XF po:verb
 hustu/M po:noun_masc
 hut/F po:noun_fem
 hutik/F po:noun_fem
-hutil-mutil/AN po:adj
 hutilmutil/R po:adv
 huvde/E po:num st:huv
 huvdeh/E po:num st:huvdeh
@@ -9284,7 +9273,6 @@ inşa/M po:noun_masc
 inşela/R po:adv
 iodane/AN po:adj
 iodethane/AN po:adj
-iodo-ethane/AN po:adj
 iqbal/F po:noun_fem
 iqtibas/F po:noun_fem
 iqtibaskirî/AN po:adj
@@ -10476,8 +10464,6 @@ Kurdistan/F po:noun_fem
 Kurdistan/ZF po:propn
 kurdiyetî/F po:noun_fem
 kurdkirî/AN po:adj
-kurdî-erebî/AN po:adj
-kurdî-krîlî/AN po:adj
 kurdî/AN po:adj
 kurdî/F po:noun_fem
 kurdîkirî/AN po:adj
@@ -12317,7 +12303,6 @@ naîvbûyî/AN po:adj
 naîvkirî/AN po:adj
 Naûrû/ZF po:propn
 naştin/F po:noun_fem
-ne-erênî/AN po:adj
 ne/D po:intj st:ne
 ne/W po:verb is:present_copula_123pl st:ne lem:bûn
 nealîdar/AN po:adj
@@ -13806,7 +13791,6 @@ pistan/F po:noun_fem
 pistand/T po:verb is:past_stem_transitive_active st:pist lem:pistandin
 pistandin/F po:noun_fem
 pistandin/XF po:verb is:infinitive_transitive_active st:pist lem:pistandin
-piste-pistkirî/AN po:adj
 pistokdar/AN po:adj
 pistîn/F po:noun_fem
 pistîn/V po:verb is:present_stem_transitive_active st:pist lem:pistandin
@@ -17056,7 +17040,6 @@ talîmat/F po:noun_fem
 talîn/AN po:adj
 talûke/AN po:adj
 talûkedar/AN po:adj
-tam-demî/AN po:adj
 tam/F po:noun_fem
 tam/R po:adv
 tambar/AN po:adj
@@ -17985,7 +17968,6 @@ tên/W po:verb is:come_present_123pl st:t lem:hatin
 tênkirî/AN po:adj
 tênşîr/AN po:adj
 têperbar/AN po:adj
-têr-mû/AN po:adj
 têr/AN po:adj
 têr/F po:noun_fem
 têrakirî/AN po:adj
@@ -20857,7 +20839,6 @@ zûxal/F po:noun_fem
 şelandî/AN po:adj
 şelaq/AN po:adj
 şelaqkirî/AN po:adj
-şelax-pelax/AN po:adj
 şelbûyî/AN po:adj
 şelelî/AN po:adj
 şeletan/AN po:adj
