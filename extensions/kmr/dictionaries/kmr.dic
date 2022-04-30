@@ -1,4 +1,4 @@
-21245
+21248
 Abbotsford/ZF po:propn
 Aberdeen/ZF po:propn
 abiyotîk/AN po:adj
@@ -6450,6 +6450,7 @@ entegrekirî/AN po:adj
 enter/F po:noun_fem
 enteres/F po:noun_fem
 enternasyonal/AN po:adj
+entry/ID po:noun
 entrîkakirî/AN po:adj
 envestîsman/F po:noun_fem
 enî/F po:noun_fem
@@ -8985,6 +8986,7 @@ hunermend/F po:noun_fem
 hunermend/FM po:noun_fem_masc
 hunermend/M po:noun_masc
 hunerî/AN po:adj
+hunerî/NOUN po:
 hunerîkirî/AN po:adj
 hungulîsk/F po:noun_fem
 hunê/B po:pron st:hûn
@@ -19412,6 +19414,7 @@ zanebûn/F po:noun_fem
 zang/F po:noun_fem
 zanist/F po:noun_fem
 zanistî/AN po:adj
+zanistî/NOUN po:
 zanistîkirî/AN po:adj
 zanyarane/AN po:adj
 zanyarî/F po:noun_fem
