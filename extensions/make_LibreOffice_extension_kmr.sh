@@ -1,1 +1,1 @@
-makeoxt -d ../kmr/kmr-Latn.aff --dicttype hunspell -l "Northern Kurdish (Kurmanji)" -t west --publisher "Sina Ahmadi (ahmadi.sina@outlook.com)" --puburl "https://github.com/sinaahmadi/KurdishHunspell" --license ../LICENSE kmr-latn kmr-latn.oxt
+makeoxt -d ../kmr/kmr-Latn.aff --dicttype hunspell -l "Northern Kurdish (Kurmanji)" -t west --publisher "Sina Ahmadi (ahmadi.sina@outlook.com)" --puburl "https://github.com/sinaahmadi/KurdishHunspell" --license ../LICENSE ku ku.oxt

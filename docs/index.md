@@ -115,6 +115,10 @@ permalink: /
 
 ![](https://raw.githubusercontent.com/sinaahmadi/KurdishHunspell/main/docs/assets/images/LibreOffice_3.png)
 
+جاری وایە، لەو پەنجەرەیەدا تەنیا ئەو زمانانە نیشان دەدرێ کە ڕێنووسی لاتینیان هەیە. بۆ نیشان دانی ڕێنووسی دیکە، وەکوو عەرەبی کە کوردیش بە کاری دێنێ، سەردانی `Preferences > Language settings > Languages` بکە و ئەو بەشانەی سوور کراون لە وێنەکەدا با بەو شێوەیە بن:
+
+![](https://raw.githubusercontent.com/sinaahmadi/KurdishHunspell/main/docs/assets/images/LibreOffice_5.png)
+
 ئەگەر هەڵەگرەکەت نەدیتەوە، دڵنیا بە فایلەکەت بە دروستی دامەزراندووە و لە پاش دامەزرانیدا، لیبرئۆفیست ڕیستارت کردووەتەوە. نیشانەیەکی باش بۆ ئەوەی بزانی نووسراوەکەت بە کوردی ئامادەیە، نێوی زمانەکەیە کە لە خواری پەنجەرەکەوە دەردەکەوێ:
 
 ![](https://raw.githubusercontent.com/sinaahmadi/KurdishHunspell/main/docs/assets/images/LibreOffice_4.png)
@@ -177,7 +181,7 @@ permalink: /
 تکایە پرسیارەکان یان کێشەکانتان لە سەر گیتهابی پڕۆژەکە یان لە ڕێگای ئیمەیلەوە ڕابگەیەنن.
 
 <!-- Read more about becoming a contributor in [our GitHub repo](https://github.com/pmarsceill/just-the-docs#contributing). -->
-
+دوایین ئاپدەیت: 02/05/2022
 
 <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 <script>
