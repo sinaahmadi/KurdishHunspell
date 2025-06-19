@@ -79,6 +79,29 @@ and in the Kurmanji lexicon:
 	rengarengkirî/AN po:adj
 	rengdarbûyî/AN po:adj
 
+### Test
+The best way to use this project for Kurdish morphological analysis and generation is [KLPT](https://github.com/sinaahmadi/klpt). If you still want to specifically test it, the process is quite simple:
+
+- Install Hunspell (see instructions at [https://github.com/hunspell/hunspell](https://github.com/hunspell/hunspell))
+- For an interactive analysis, you can then use this command in the directory where the `.aff` and `.dic` files are located:
+
+```
+analyze ckb-Arab.aff ckb-Arab.dic /dev/stdin
+> بڕیار
+analyze(بڕیار) = po:noun st:بڕ بڕیار:ts 
+stem(بڕیار) = بڕ
+
+> کرایە
+analyze(کرایە) = po:verb is:past_stem_intransitive_passive st:ک lem:کران کرا:ts یە
+analyze(کرایە) = po:verb is:past_stem_intransitive_active st:ک lem:کران کرا:ts یە
+stem(کرایە) = ک
+
+> بشهێڵم
+analyze(بشهێڵم) = M:lf هێڵ:ts po:verb is:present_stem_transitive_active st:هێڵ lem:هێشتن_هێڵانM:lf 
+stem(بشهێڵم) = هێڵ                                                                                        
+```
+
+
 ### Cite these papers
 
 There are two publications regarding this project which should be cited as follows ([paper 1](https://arxiv.org/ftp/arxiv/papers/2109/2109.06374.pdf), [paper 2](https://arxiv.org/ftp/arxiv/papers/2109/2109.03942.pdf)):
