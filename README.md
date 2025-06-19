@@ -1,7 +1,13 @@
 # Hunspell for Kurdish
-## A morphological analyzer and spell checker for Kurdish in Hunspell (Sorani and Kurmanji<sup>🆕</sup>)
+## A morphological analyzer and spell checker for Kurdish in Hunspell (Sorani and Kurmanji)
 ---
-### Latest update on April 28th, 2022
+
+### Latest update on June 19th, 2025: Version 0.1.1
+- [x] Both Sorani and Kurmanji lexicons are updated. Now, **Sorani has 33,856 tagged entries** (24,888 in the previous version) and **Kurmanji has 43,945 tagged entries** (21,245 in the previous version).
+- [x] The rules are revised and completed for Sorani. Many verbal forms where previously missing. The transitivity of some verbs is also corrected in this version.
+- [x] Additional rules to process digits and punctuation marks are added.
+
+### Latest update on April 28th, 2022: Version, 0.1.0
 - [x] Morphosyntactic tags, i.e. `po`
 - [x] Inflectional tags, i.e. `is`
 - [x] Stems, i.e. `st` (covering all part-of-speech tags from version 0.1.3 / verbal stems added in Version 0.1.2) 
@@ -14,7 +20,7 @@
 
 [Hunspell](http://hunspell.github.io/) is a spell checker and morphological analyzer originally designed for languages with rich morphology and complex word compounding. An open-source software, it is widely used by various web browsers and text editors. This repository contains an implementation of the Kurdish morphological rules and annotated lexicon for the task of spell-checking and morphological analysis. To use these functionalities, see [Kurdish Language Processing Toolkit (KLPT)](https://github.com/sinaahmadi/klpt). Moreover, this spell-checker is currently being added as an extension to LibreOffice and OpenOffice and therefore, can be used within many text editors and browsers as well.
 
-The project was initially created for Sorani Kurdish in early 2020. As of April 2022, a similar implementation is also provided for Kurmanji. It should be noted that the current project is the outcome of months of volunteer research and implementation. **Please respect the terms of the license below and don't forget to recognize hours of dictionary tagging and extraction of morphological rules!** See below to find out how you can be a sponsor of this project.
+The project was initially created for Sorani Kurdish in early 2020. In April 2022, I also added a similar implementation for Kurmanji. It should be noted that the current project is the outcome of months of volunteer research and implementation. **Please respect the terms of the license below and don't forget to recognize hours of manual dictionary tagging and extraction of morphological rules!** See below to find out how you can be a sponsor of this project.
 
 ### Morphological rules
 
@@ -53,6 +59,8 @@ According to the morphological rules, lemmata in our lexicons are tagged using t
 - `X`: infinitive
 - `Z`: proper names
 - `W`: irregular cases like *were* 'come.imp.2s'
+- `H`: punctuation marks
+- `J`: numerals as digits (0-9 and ٠-٩)
 
 The following is an example on how a few lemmata are tagged in the Sorani lexicon:
 
@@ -71,7 +79,7 @@ and in the Kurmanji lexicon:
 	rengarengkirî/AN po:adj
 	rengdarbûyî/AN po:adj
 
-### Cite this paper
+### Cite these papers
 
 There are two publications regarding this project which should be cited as follows ([paper 1](https://arxiv.org/ftp/arxiv/papers/2109/2109.06374.pdf), [paper 2](https://arxiv.org/ftp/arxiv/papers/2109/2109.03942.pdf)):
 
@@ -95,7 +103,7 @@ Are you interested in this project? Please follow the instructions of the [Kurdi
 ### Sponsorship
 The current project is the fruit of hundreds of hours of research and development. If this project matters to you, please support me through the Sponsor button on the top of the page. Thanks!
 
-My warmest thanks to [datavaluepeople](www.datavaluepeople.com) and [Build Up](https://howtobuildup.org) for their sponsorship that gave me the motivation to complete adding stems. Version 0.1.3 was made possible thanks to them! ❤️
+My warmest thanks to [datavaluepeople](www.datavaluepeople.com) and [Build Up](https://howtobuildup.org) for their sponsorship that gave me the motivation to complete adding stems. The updates in 2022 were made possible thanks to them! ❤️
 
 ### License
 
