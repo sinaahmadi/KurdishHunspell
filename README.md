@@ -2,6 +2,9 @@
 ## A morphological analyzer and spell checker for Kurdish in Hunspell (Sorani and Kurmanji)
 ---
 
+### Latest update on January 5th, 2026:
+- [x] Hunspell now supports Zazaki (`zza`) with 43,328 tagged lexical entries and > 1000 inflectional rules.
+
 ### Latest update on June 19th, 2025: Version 0.1.1
 - [x] Both Sorani and Kurmanji lexicons are updated. Now, **Sorani has 33,856 tagged entries** (24,888 in the previous version) and **Kurmanji has 43,945 tagged entries** (21,245 in the previous version).
 - [x] The rules are revised and completed for Sorani. Many verbal forms where previously missing. The transitivity of some verbs is also corrected in this version.
@@ -28,7 +31,7 @@ Kurdish morphology, particularly that of the Sorani dialect, is notoriously comp
 
 ![alt text](example.png "Zazaki and Gorani languages within the Indo-European language family")
 
-In order to extract morphological rules, the morphology of Kurdish is studied in a formal way in the paper entitled [A Formal Description of Sorani Kurdish Morphology](https://arxiv.org/ftp/arxiv/papers/2109/2109.03942.pdf). This formalization allows various morpho-syntactic features of Kurdish to be represented as rules which are presented in the [ckb-Arab.aff](ckb/ckb-Arab.aff) and [kmr-Latn.aff](kmr/kmr-Latn.aff) files. 
+In order to extract morphological rules, the morphology of Kurdish is studied in a formal way in the paper entitled [A Formal Description of Sorani Kurdish Morphology](https://arxiv.org/ftp/arxiv/papers/2109/2109.03942.pdf). This formalization allows various morpho-syntactic features of Kurdish to be represented as rules which are presented in the [ckb-Arab.aff](ckb/ckb-Arab.aff), [kmr-Latn.aff](kmr/kmr-Latn.aff) and [zza-Latn.aff](zza/zza-Latn.aff) files. 
 
  - Regarding the Sorani implementation, in version 0.1.0, inflectional and derivational rules regarding verbs, adjectives, adverbs and nouns are implemented. In version 0.1.2, the stem of verbs were provided. This is useful for the stemming task where given a word form, its stem can be retrieved, as in 'ڕن' → 'ڕنیبووم'. Following this, in version 0.1.3 the stem of other part-of-speech tags and the lemma form of the verbs, e.g. 'نواندن' → 'دەنوێنم', were added. Therefore, both the stemming and the lemmatization tasks are now fully operational. In addition, more lexical entries are added, particularly proper names. 
 - Regarding the Kurmanji implementation, in version 0.1.0 the structure of the project is created where morphological rules are defined and a dictionary containing over 16000 entries is manually tagged. Kurmanji morphology in comparison to that of Sorani is simpler. This being said, to keep the usage of flags consistent across the project, the same are used in both dialects; for instance, the `I` (intransitive past stem) and `T` (transitive past stem) flags are treated equally even though ergativity in Kurmanji is dealt with differently from Sorani. Stems and lemmas are also available for Kurmanji.
@@ -39,7 +42,7 @@ Next versions will focus on further enrichments of the current categories and al
 
 As a rule-based method, Hunspell needs an annotated lexicon to which the morphological rules are applied. To this end, we use the lexicographic material provided by the [FreeDict project](https://freedict.org/) and [Wîkîferheng, the Kurdish Wiktionary](https://ku.wiktionary.org/). In addition, [Wikidata](https://www.wikidata.org) is consulted to extract proper names. The transliteration of the Latin-based script of Kurdish into the Arabic-based one is carried out using [Wergor](https://github.com/sinaahmadi/wergor). Each lemma in the lexicon is manually tagged with part-of-speech, its formation type (derivational/inflectional) and further morphological properties. In addition, composing parts of compound forms are specified using a hyphen. This way, the annotated lexicon is also used within the [Kurdish Tokenization project](https://github.com/sinaahmadi/KurdishTokenization).
 
-According to the morphological rules, lemmata in our lexicons are tagged using the following flags. If the flags don't make much sense to you, the part of speech tags, i.e. `po` flag, will hopefully do as they are provided according to the [Universal Dependency tags](https://universaldependencies.org/u/pos/index.html). The annotated lexicons are available at [ckb-Arab.dic](ckb/ckb-Arab.dic) and [kmr-Latn.dic](kmr/kmr-Latn.dic).
+According to the morphological rules, lemmata in our lexicons are tagged using the following flags. If the flags don't make much sense to you, the part of speech tags, i.e. `po` flag, will hopefully do as they are provided according to the [Universal Dependency tags](https://universaldependencies.org/u/pos/index.html). The annotated lexicons are available at [ckb-Arab.dic](ckb/ckb-Arab.dic), [kmr-Latn.dic](kmr/kmr-Latn.dic) and [zza-Latn.dic](zza/zza-Latn.dic)
 
 - `N`: Noun
 - `M`: Masculine noun
@@ -78,6 +81,14 @@ and in the Kurmanji lexicon:
 	rengandin/XN po:verb is:infinitive_transitive_active st:reng lem:rengandin
 	rengarengkirî/AN po:adj
 	rengdarbûyî/AN po:adj
+
+and in the Zazaki lexicon:
+
+	zeliqnayîş/XM po:verb is:infinitive2_transitive_active lem:zeliqnayene
+	zeliqne/V po:verb is:present_stem_transitive_active lem:zeliqnayene
+	zeliqîya/I po:verb is:past_stem_intransitive_active lem:zeliqîyayene
+	zeliqîyaya/F po:feminine
+	zeliqîyaye/M po:masculine
 
 ### Test
 The best way to use this project for Kurdish morphological analysis and generation is [KLPT](https://github.com/sinaahmadi/klpt). If you still want to specifically test it, the process is quite simple:
@@ -119,6 +130,20 @@ There are two publications regarding this project which should be cited as follo
 		journal={arXiv preprint arXiv:2109.03942},
 		year={2021}
 	}
+
+If using the Zazaki analyzer, please cite the following thesis as well:
+
+		Yıldızhan, V. (2025). SEBA ZAZAKÎ HUNSPELL: BI BINGEHÊ KORPUSÊ KOVARA VATEYÎ ANALİZKERO MORFOLOJÎK Û KONTROLKERÊ RASTNUŞTIŞÎ [Doctoral thesis, Dicle University]. Unpublished thesis.
+
+		@phdthesis{Yildizhan2025,
+		  author       = {Yıldızhan, V.},
+		  title        = {SEBA ZAZAKÎ HUNSPELL: BI BINGEHÊ KORPUSÊ KOVARA VATEYÎ ANALİZKERO MORFOLOJÎK Û KONTROLKERÊ RASTNUŞTIŞÎ},
+		  school       = {Dicle University},
+		  year         = {2025},
+		  type         = {Doctoral thesis},
+		  note         = {Unpublished doctoral thesis}
+		}
+
 
 ### Contribute
 Are you interested in this project? Please follow the instructions of the [Kurdish Language Processing Toolkit (KLPT)](https://github.com/sinaahmadi/klpt) to get involved. Open-source is fun! 😊 

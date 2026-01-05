@@ -1,0 +1,1170 @@
+# =======================================================================================
+#                    Spell detection and correction for Zazaki
+#                          	List of affixes
+# =======================================================================================
+#                             Version 0.1.1 (Last updated on 19-06-2025)
+#                             <https://github.com/sinaahmadi/KurdishHunspell>
+# =======================================================================================
+# Copyright 2025 Veysel YILDIZHAN & Sina Ahmadi
+# This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+# =======================================================================================
+# Description of the flags which are identitical to those of the Zazaki Hunspell (see the same repository):
+#	N: Noun
+#	M: Masculine noun
+#	F: Feminine noun (in Kurmanji and Zazaki)
+#	V: present stem of verbs
+#	I: past stem of intransitive verbs
+#	T: past stem of transitive verbs
+#	A: adjectives
+#	R: adverbs
+#	E: numerals
+#	C: conjunction
+#	D: interjection
+#	B: pronouns
+#	E: numerals
+#	P: adpositions
+#	G: particle
+#	X: infinitive
+#	Z: proper names
+#	W: exceptional cases like were 'come.imp.2s' or exceptional present stems for imperative forms
+#########################################################################################
+SET UTF-8
+LANG zza
+COMPLEXPREFIXES
+TRY abcçdeêfghiîjklmnopqrsştuûvwxyzABCÇDEÊFGHIÎJKLMNOPQRSŞTUÛVWXYZ
+KEY iîêeaoûjczsmnkçbvw|qwertyuiopxwû,|asdfghjklşî|zxcvbnmêç.
+
+WORDCHARS ,.-[]|/;"%`'
+
+BREAK 1
+BREAK -
+
+############### Morphological rules ######################################################
+############### Nouns, adjectives and adverbs ##########################################################
+
+SFX F Y 178
+SFX F e a e$
+SFX F e ê e$
+SFX F e êke e$
+SFX F e êka e$
+SFX F e ade e$
+SFX F e î e$
+SFX F e anê e$
+SFX F e êno e$
+SFX F 0 e [^aeêiîouû] .
+SFX F 0 a [^aeêiîouû] .
+SFX F 0 ê [^aeêiîouû] .
+SFX F 0 êke [^aeêiîouû] .
+SFX F 0 êka [^aeêiîouû] .
+SFX F 0 ade [^aeêiîouû] .
+SFX F 0 î [^aeêiîouû] .
+SFX F 0 anê [^aeêiîouû] .
+SFX F 0 êno [^aeêiîouû] .
+SFX F 0 ye [aêiîouû] .
+SFX F 0 ya [aêiîouû] .
+SFX F 0 yê [aêiîouû] .
+SFX F 0 yêke [aêiîouû] .
+SFX F 0 yêka [aêiîouû] .
+SFX F 0 yade [aêiîouû] .
+SFX F 0 yî [aêiîouû] .
+SFX F 0 yanê [aêiîouû] .
+SFX F 0 yêno [aêiîouû] .
+SFX F 0 ek [^aeêiîouû] .
+SFX F 0 eki [^aeêiîouû] .
+SFX F 0 eke [^aeêiîouû] .
+SFX F 0 ay [^aeêiîouû] .
+SFX F 0 ey [^aeêiîouû] .
+SFX F 0 aya [^aeêiîouû] .
+SFX F 0 eka [^aeêiîouû] .
+SFX F 0 ekî [^aeêiîouû] .
+SFX F 0 ekan [^aeêiîouû] .
+SFX F 0 an [^aeêiîouû] .
+SFX F 0 on [^aeêiîouû] .
+SFX F 0 o [^aeêiîouû] .
+SFX F 0 eyê [^aeêiîouû] .
+SFX F 0 û [^aeêiîouû] .
+SFX F 0 ekeri [^aeêiîouû] .
+SFX F 0 eyî [^aeêiîouû] .
+SFX F 0 ekê [^aeêiîouû] .
+SFX F 0 ekûn [^aeêiîouû] .
+SFX F 0 ikeri [^aeêiîouû] .
+SFX F 0 ayê [^aeêiîouû] .
+SFX F 0 andê [^aeêiîouû] .
+SFX F 0 erda [^aeêiîouû] .
+SFX F 0 i [^aeêiîouû] .
+SFX F 0 ûn [^aeêiîouû] .
+SFX F 0 ekêda [^aeêiîouû] .
+SFX F 0 onê [^aeêiîouû] .
+SFX F 0 awa [^aeêiîouû] .
+SFX F 0 ayan [^aeêiîouû] .
+SFX F 0 ardey [^aeêiîouû] .
+SFX F 0 ayke [^aeêiîouû] .
+SFX F 0 ekanê [^aeêiîouû] .
+SFX F 0 ekêk [^aeêiîouû] .
+SFX F 0 ekêka [^aeêiîouû] .
+SFX F 0 ono [^aeêiîouû] .
+SFX F 0 ûno [^aeêiîouû] .
+SFX F 0 ada [^aeêiîouû] .
+SFX F 0 ara [^aeêiîouû] .
+SFX F 0 ayanê [^aeêiîouû] .
+SFX F 0 ekon [^aeêiîouû] .
+SFX F 0 ekên [^aeêiîouû] .
+SFX F 0 ekênê [^aeêiîouû] .
+SFX F 0 eray [^aeêiîouû] .
+SFX F 0 erday [^aeêiîouû] .
+SFX F 0 eyêke [^aeêiîouû] .
+SFX F 0 anî [^aeêiîouû] .
+SFX F 0 arda [^aeêiîouû] .
+SFX F 0 arey [^aeêiîouû] .
+SFX F 0 ayana [^aeêiîouû] .
+SFX F 0 aykey [^aeêiîouû] .
+SFX F 0 ayênda [^aeêiîouû] .
+SFX F 0 ekda [^aeêiîouû] .
+SFX F 0 ekdê [^aeêiîouû] .
+SFX F 0 ekere [^aeêiîouû] .
+SFX F 0 ekêke [^aeêiîouû] .
+SFX F 0 ekûndê [^aeêiîouû] .
+SFX F 0 er [^aeêiîouû] .
+SFX F 0 eri [^aeêiîouû] .
+SFX F 0 eya [^aeêiîouû] .
+SFX F 0 eyan [^aeêiîouû] .
+SFX F 0 eyêda [^aeêiîouû] .
+SFX F 0 eyêka [^aeêiîouû] .
+SFX F 0 ûnê [^aeêiîouû] .
+SFX F 0 ayî [^aeêiîouû] .
+SFX F 0 eyanê [^aeêiîouû] .
+SFX F 0 ayêk [^aeêiîouû] .
+SFX F 0 akan [^aeêiîouû] .
+SFX F 0 ayanî [^aeêiîouû] .
+SFX F 0 ayêda [^aeêiîouû] .
+SFX F 0 ayêka [^aeêiîouû] .
+SFX F 0 ekîya [^aeêiîouû] .
+SFX F 0 êyî [^aeêiîouû] .
+SFX F 0 atîya [^aeêiîouû] .
+SFX F 0 ayano [^aeêiîouû] .
+SFX F 0 aye [^aeêiîouû] .
+SFX F 0 ayin [^aeêiîouû] .
+SFX F 0 ayîn [^aeêiîouû] .
+SFX F 0 dî [^aeêiîouû] .
+SFX F 0 ekade [^aeêiîouû] .
+SFX F 0 ekek [^aeêiîouû] .
+SFX F 0 ekna [^aeêiîouû] .
+SFX F 0 ekêde [^aeêiîouû] .
+SFX F 0 eye [^aeêiîouû] .
+SFX F 0 êda [^aeêiîouû] .
+SFX F 0 êk [^aeêiîouû] .
+SFX F 0 êkê [^aeêiîouû] .
+SFX F 0 êkêda [^aeêiîouû] .
+SFX F 0 êy [^aeêiîouû] .
+SFX F 0 êyê [^aeêiîouû] .
+SFX F 0 îme [^aeêiîouû] .
+SFX F 0 ûnî [^aeêiîouû] .
+SFX F 0 yan [aêiîouû] .
+SFX F 0 ke [aêiîouû] .
+SFX F 0 yon [aêiîouû] .
+SFX F 0 da [aêiîouû] .
+SFX F 0 ka [aêiîouû] .
+SFX F 0 kî [aêiîouû] .
+SFX F 0 yay [aêiîouû] .
+SFX F 0 yeray [aêiîouû] .
+SFX F 0 kê [aêiîouû] .
+SFX F 0 yabi [aêiîouû] .
+SFX F 0 yekî [aêiîouû] .
+SFX F 0 yerday [aêiîouû] .
+SFX F 0 yi [aêiîouû] .
+SFX F 0 k [aêiîouû] .
+SFX F 0 kade [aêiîouû] .
+SFX F 0 kan [aêiîouû] .
+SFX F 0 nê [aêiîouû] .
+SFX F 0 y [aêiîouû] .
+SFX F 0 yayên [aêiîouû] .
+SFX F 0 yayêne [aêiîouû] .
+SFX F 0 yayênî [aêiîouû] .
+SFX F 0 yayîşê [aêiîouû] .
+SFX F 0 yek [aêiîouû] .
+SFX F 0 yeki [aêiîouû] .
+SFX F 0 yera [aêiîouû] .
+SFX F 0 yeri [aêiîouû] .
+SFX F 0 yeya [aêiîouû] .
+SFX F 0 yo [aêiîouû] .
+SFX F 0 yono [aêiîouû] .
+SFX F 0 yonê [aêiîouû] .
+SFX F 0 yêna [aêiîouû] .
+SFX F 0 yêne [aêiîouû] .
+SFX F 0 yûnê [aêiîouû] .
+SFX F 0 yûnî [aêiîouû] .
+SFX F 0 kêda [aêiîouû] .
+SFX F 0 yanî [aêiîouû] .
+SFX F 0 yêk [aêiîouû] .
+SFX F 0 yeka [aêiîouû] .
+SFX F 0 yûn [aêiîouû] .
+SFX F 0 kanê [aêiîouû] .
+SFX F 0 no [aêiîouû] .
+SFX F 0 yin [aêiîouû] .
+SFX F 0 kêka [aêiîouû] .
+SFX F 0 tî [aêiîouû] .
+SFX F 0 yey [aêiîouû] .
+SFX F 0 yêda [aêiîouû] .
+SFX F 0 kêk [aêiîouû] .
+SFX F 0 kêke [aêiîouû] .
+SFX F 0 kû [aêiîouû] .
+SFX F 0 kûnê [aêiîouû] .
+SFX F 0 tene [aêiîouû] .
+SFX F 0 tîya [aêiîouû] .
+SFX F 0 tîye [aêiîouû] .
+SFX F 0 verdiş [aêiîouû] .
+SFX F 0 yandê [aêiîouû] .
+SFX F 0 yekê [aêiîouû] .
+SFX F 0 yinan [aêiîouû] .
+SFX F 0 yinî [aêiîouû] .
+SFX F 0 yu [aêiîouû] .
+SFX F 0 yîka [aêiîouû] .
+SFX F 0 yîya [aêiîouû] .
+SFX F 0 yû [aêiîouû] .
+
+
+
+SFX M Y 118
+SFX M 0 ê [^aeêiîouû] .
+SFX M 0 î [^aeêiîouû] .
+SFX M 0 an [^aeêiîouû] .
+SFX M 0 anê [^aeêiîouû] .
+SFX M 0 o [^aeêiîouû] .
+SFX M 0 anî [^aeêiîouû] .
+SFX M 0 êk [^aeêiîouû] .
+SFX M 0 ûn [^aeêiîouû] .
+SFX M 0 dê [^aeêiîouû] .
+SFX M 0 êko [^aeêiîouû] .
+SFX M 0 yêko [aeêiîouû] .
+SFX M 0 ûnî [^aeêiîouû] .
+SFX M 0 êkê [^aeêiîouû] .
+SFX M 0 a [^aeêiîouû] .
+SFX M 0 andê [^aeêiîouû] .
+SFX M 0 êde [^aeêiîouû] .
+SFX M 0 e [^aeêiîouû] .
+SFX M 0 êkî [^aeêiîouû] .
+SFX M 0 în [^aeêiîouû] .
+SFX M 0 enê [^aeêiîouû] .
+SFX M 0 in [^aeêiîouû] .
+SFX M 0 on [^aeêiîouû] .
+SFX M 0 ondê [^aeêiîouû] .
+SFX M 0 onê [^aeêiîouû] .
+SFX M 0 êdê [^aeêiîouû] .
+SFX M 0 êndê [^aeêiîouû] .
+SFX M 0 û [^aeêiîouû] .
+SFX M 0 ode [^aeêiîouû] .
+SFX M 0 êno [^aeêiîouû] .
+SFX M 0 ek [^aeêiîouû] .
+SFX M 0 yê [aeêiîouû] .
+SFX M 0 yo [aeêiîouû] .
+SFX M 0 yî [aeêiîouû] .
+SFX M 0 yêk [aeêiîouû] .
+SFX M 0 yêkê [aeêiîouû] .
+SFX M 0 yêde [aeêiîouû] .
+SFX M 0 yêndê [aeêiîouû] .
+SFX M 0 yode [aeêiîouû] .
+SFX M 0 yêkî [aeêiîouû] .
+SFX M 0 yanê [aeêiîouû] .
+SFX M 0 yan [aeêiîouû] .
+SFX M 0 yêno [aeêiîouû] .
+SFX M 0 îye [^aeêiîouû] .
+SFX M 0 i [^aeêiîouû] .
+SFX M 0 êke [^aeêiîouû] .
+SFX M 0 atî [^aeêiîouû] .
+SFX M 0 înî [^aeêiîouû] .
+SFX M 0 wer [^aeêiîouû] .
+SFX M 0 êdo [^aeêiîouû] .
+SFX M 0 îya [^aeêiîouû] .
+SFX M 0 were [^aeêiîouû] .
+SFX M 0 ekî [^aeêiîouû] .
+SFX M 0 ko [^aeêiîouû] .
+SFX M 0 êka [^aeêiîouû] .
+SFX M 0 êkew [^aeêiîouû] .
+SFX M 0 anên [^aeêiîouû] .
+SFX M 0 ayî [^aeêiîouû] .
+SFX M 0 ayîya [^aeêiîouû] .
+SFX M 0 ayîye [^aeêiîouû] .
+SFX M 0 eko [^aeêiîouû] .
+SFX M 0 eyê [^aeêiîouû] .
+SFX M 0 ane [^aeêiîouû] .
+SFX M 0 ano [^aeêiîouû] .
+SFX M 0 atîye [^aeêiîouû] .
+SFX M 0 ayê [^aeêiîouû] .
+SFX M 0 do [^aeêiîouû] .
+SFX M 0 eka [^aeêiîouû] .
+SFX M 0 ekê [^aeêiîouû] .
+SFX M 0 indo [^aeêiîouû] .
+SFX M 0 iyenê [^aeêiîouû] .
+SFX M 0 kiştişî [^aeêiîouû] .
+SFX M 0 êndo [^aeêiîouû] .
+SFX M 0 îyê [^aeêiîouû] .
+SFX M 0 îyî [^aeêiîouû] .
+SFX M 0 ûney [^aeêiîouû] .
+SFX M 0 ûnê [^aeêiîouû] .
+SFX M e ê e$ 
+SFX M e î e$ 
+SFX M e i e$ 
+SFX M e în e$ 
+SFX M e im e$ 
+SFX M e an e$ 
+SFX M e in e$
+SFX M e ûn e$
+SFX M e înî e$ 
+SFX M e imî e$ 
+SFX M e imo e$ 
+SFX M e imê e$ 
+SFX M e inî e$ 
+SFX M e anê e$ 
+SFX M e îdê e$ 
+SFX M e îna e$ 
+SFX M e îno e$ 
+SFX M e înê e$ 
+SFX M e îye e$ 
+SFX M e îyê e$ 
+SFX M e iman e$ 
+SFX M e imey e$ 
+SFX M e imdê e$ 
+SFX M e imon e$ 
+SFX M e iwan e$ 
+SFX M e imanê e$ 
+SFX M e imêko e$ 
+SFX M e imonê e$ 
+SFX M e imêdo e$ 
+SFX M e imondê e$ 
+SFX M 0 k [aeêiîouû] .
+SFX M 0 y [aeêiîouû] .
+SFX M 0 kî [aeêiîouû] .
+SFX M 0 kê [aeêiîouû] .
+SFX M 0 dê [aeêiîouû] .
+SFX M 0 ko [aeêiîouû] .
+SFX M 0 hî [aeêiîouû] .
+SFX M 0 tî [aeêiîouû] .
+SFX M 0 kan [aeêiîouû] .
+SFX M 0 kêk [aeêiîouû] .
+SFX M 0 kêde [aeêiîouû] .
+SFX M 0 tîya [aeêiîouû] .
+
+
+
+############### ADJECTIVES ###############
+
+SFX A Y 59
+SFX A 0 a [^aeêiîouû] .
+SFX A 0 alu [^aeêiîouû] .
+SFX A 0 alun [^aeêiîouû] .
+SFX A 0 aluna [^aeêiîouû] .
+SFX A 0 an [^aeêiîouû] .
+SFX A 0 anê [^aeêiîouû] .
+SFX A 0 ay [^aeêiîouû] .
+SFX A 0 e [^aeêiîouû] .
+SFX A 0 ek [^aeêiîouû] .
+SFX A 0 eka [^aeêiîouû] .
+SFX A 0 ekan [^aeêiîouû] .
+SFX A 0 eke [^aeêiîouû] .
+SFX A 0 ekiya [^aeêiîouû] .
+SFX A 0 eko [^aeêiîouû] .
+SFX A 0 ekê [^aeêiîouû] .
+SFX A 0 ekênî [^aeêiîouû] .
+SFX A 0 ekênîya [^aeêiîouû] .
+SFX A 0 ekêr [^aeêiîouû] .
+SFX A 0 ekêre [^aeêiîouû] .
+SFX A 0 ekî [^aeêiîouû] .
+SFX A 0 ekîya [^aeêiîouû] .
+SFX A 0 ekîye [^aeêiîouû] .
+SFX A 0 ekîyê [^aeêiîouû] .
+SFX A 0 er [^aeêiîouû] .
+SFX A 0 ey [^aeêiîouû] .
+SFX A 0 eya [^aeêiîouû] .
+SFX A 0 i [^aeêiîouû] .
+SFX A 0 ik [^aeêiîouû] .
+SFX A 0 ika [^aeêiîouû] .
+SFX A 0 ikan [^aeêiîouû] .
+SFX A 0 ikî [^aeêiîouû] .
+SFX A 0 iye [^aeêiîouû] .
+SFX A 0 iyê [^aeêiîouû] .
+SFX A 0 kek [^aeêiîouû] .
+SFX A 0 kekî [^aeêiîouû] .
+SFX A 0 kêney [^aeêiîouû] .
+SFX A 0 o [^aeêiîouû] .
+SFX A 0 on [^aeêiîouû] .
+SFX A 0 oyî [^aeêiîouû] .
+SFX A 0 tirîn [^aeêiîouû] .
+SFX A 0 ê [^aeêiîouû] .
+SFX A 0 êk [^aeêiîouû] .
+SFX A 0 êka [^aeêiîouû] .
+SFX A 0 êke [^aeêiîouû] .
+SFX A 0 ênîya [^aeêiîouû] .
+SFX A 0 êr [^aeêiîouû] .
+SFX A 0 êrî [^aeêiîouû] .
+SFX A 0 êya [^aeêiîouû] .
+SFX A 0 î [^aeêiîouû] .
+SFX A 0 îbî [^aeêiîouû] .
+SFX A 0 îkîya [^aeêiîouû] .
+SFX A 0 îya [^aeêiîouû] .
+SFX A 0 îyade [^aeêiîouû] .
+SFX A 0 îye [^aeêiîouû] .
+SFX A 0 îyo [^aeêiîouû] .
+SFX A 0 îyê [^aeêiîouû] .
+SFX A 0 û [^aeêiîouû] .
+SFX A 0 ûn [^aeêiîouû] .
+SFX A 0 ûnî [^aeêiîouû] .
+
+
+############### Verbs ##########################################################
+
+PFX V Y 79
+PFX V 0 bi . 
+PFX V 0 nê . 
+PFX V 0 me .
+PFX V 0 anê .
+PFX V 0 danê .
+PFX V 0 denê .
+PFX V 0 panê .
+PFX V 0 ponê .
+PFX V 0 ranê .
+PFX V 0 ronê .
+PFX V 0 tanê .
+PFX V 0 tonê .
+PFX V 0 wenê .
+PFX V 0 pênê .
+PFX V 0 nêa .
+PFX V 0 nêda .
+PFX V 0 nêde .
+PFX V 0 nêpa .
+PFX V 0 nêpo .
+PFX V 0 nêra .
+PFX V 0 nêro .
+PFX V 0 nêta .
+PFX V 0 nêto .
+PFX V 0 nêwe .
+PFX V 0 nêpê .
+PFX V 0 a .
+PFX V 0 da .
+PFX V 0 de .
+PFX V 0 pa .
+PFX V 0 po .
+PFX V 0 ra .
+PFX V 0 ro .
+PFX V 0 ta .
+PFX V 0 to .
+PFX V 0 we .
+PFX V 0 mea .
+PFX V 0 meda .
+PFX V 0 mede .
+PFX V 0 mepa .
+PFX V 0 mepo .
+PFX V 0 mera .
+PFX V 0 mero .
+PFX V 0 meta .
+PFX V 0 meto .
+PFX V 0 mewe .
+PFX V 0 mepê .
+PFX V 0 ame .
+PFX V 0 dame .
+PFX V 0 deme .
+PFX V 0 pame .
+PFX V 0 pome .
+PFX V 0 rame .
+PFX V 0 rome .
+PFX V 0 tame .
+PFX V 0 tome .
+PFX V 0 weme .
+PFX V 0 pême .
+PFX V 0 bia .
+PFX V 0 bida .
+PFX V 0 bide .
+PFX V 0 bipa .
+PFX V 0 bipo .
+PFX V 0 bira .
+PFX V 0 biro .
+PFX V 0 bita .
+PFX V 0 bito .
+PFX V 0 biwe .
+PFX V 0 bipê .
+PFX V 0 abi .
+PFX V 0 dabi .
+PFX V 0 debi .
+PFX V 0 pabi .
+PFX V 0 pobi .
+PFX V 0 rabi .
+PFX V 0 robi .
+PFX V 0 tabi .
+PFX V 0 tobi .
+PFX V 0 webi .
+PFX V 0 pêbi . 
+
+SFX V Y 50
+SFX V e ê e
+SFX V e ina e
+SFX V e ino e
+SFX V e inê e
+SFX V e inî e
+SFX V e îme e
+SFX V e îye e
+SFX V e îyê e
+SFX V e î e
+SFX V e a e
+SFX V e o e
+SFX V 0 nû .
+SFX V 0 na .
+SFX V 0 nî .
+SFX V 0 no .
+SFX V 0 nê .
+SFX V 0 n e$
+SFX V 0 no e$
+SFX V 0 na e$
+SFX V 0 nê e$
+SFX V 0 nî e$
+SFX V 0 nû e$
+SFX V 0 nd e$
+SFX V 0 ne e$
+SFX V 0 ni e$
+SFX V 0 nan e$
+SFX V 0 nûn e$
+SFX V 0 nîy e$
+SFX V 0 nim e$
+SFX V 0 ney e$
+SFX V 0 nîm e$
+SFX V 0 nîme e$
+SFX V 0 nane e$
+SFX V 0 nena e$
+SFX V 0 nîmê e$
+SFX V 0 nûne e$
+SFX V 0 nîmi e$
+SFX V 0 nimi e$
+SFX V e iro e$
+SFX V e ira e$
+SFX V e irî  e$
+SFX V e irê e$
+SFX V e irên e$
+SFX V e irîn e$
+SFX V 0 ro .
+SFX V 0 ra .
+SFX V 0 rî .
+SFX V 0 rê .
+SFX V 0 rên .
+SFX V 0 rîn .
+
+
+PFX I Y 79
+PFX I 0 nê .
+PFX I 0 bi .
+PFX I 0 me .
+PFX I 0 anê .
+PFX I 0 danê .
+PFX I 0 denê .
+PFX I 0 panê .
+PFX I 0 ponê .
+PFX I 0 ranê .
+PFX I 0 ronê .
+PFX I 0 tanê .
+PFX I 0 tonê .
+PFX I 0 wenê .
+PFX I 0 pênê .
+PFX I 0 nêa .
+PFX I 0 nêda .
+PFX I 0 nêde .
+PFX I 0 nêpa .
+PFX I 0 nêpo .
+PFX I 0 nêra .
+PFX I 0 nêro .
+PFX I 0 nêta .
+PFX I 0 nêto .
+PFX I 0 nêwe .
+PFX I 0 nêpê .
+PFX I 0 a .
+PFX I 0 da .
+PFX I 0 de .
+PFX I 0 pa .
+PFX I 0 po .
+PFX I 0 ra .
+PFX I 0 ro .
+PFX I 0 ta .
+PFX I 0 to .
+PFX I 0 we .
+PFX I 0 mea .
+PFX I 0 meda .
+PFX I 0 mede .
+PFX I 0 mepa .
+PFX I 0 mepo .
+PFX I 0 mera .
+PFX I 0 mero .
+PFX I 0 meta .
+PFX I 0 meto .
+PFX I 0 mewe .
+PFX I 0 mepê .
+PFX I 0 ame .
+PFX I 0 dame .
+PFX I 0 deme .
+PFX I 0 pame .
+PFX I 0 pome .
+PFX I 0 rame .
+PFX I 0 rome .
+PFX I 0 tame .
+PFX I 0 tome .
+PFX I 0 weme .
+PFX I 0 pême .
+PFX I 0 bia .
+PFX I 0 bida .
+PFX I 0 bide .
+PFX I 0 bipa .
+PFX I 0 bipo .
+PFX I 0 bira .
+PFX I 0 biro .
+PFX I 0 bita .
+PFX I 0 bito .
+PFX I 0 biwe .
+PFX I 0 bipê .
+PFX I 0 abi .
+PFX I 0 dabi .
+PFX I 0 debi .
+PFX I 0 pabi .
+PFX I 0 pobi .
+PFX I 0 rabi .
+PFX I 0 robi .
+PFX I 0 tabi .
+PFX I 0 tobi .
+PFX I 0 webi .
+PFX I 0 pêbi .
+
+SFX I Y 69
+SFX I 0 a [^aeêiîouû] .
+SFX I 0 î [^aeêiîouû] .
+SFX I 0 e [^aeêiîouû] .
+SFX I 0 êne [^aeêiîouû] .
+SFX I 0 ê [^aeêiîouû] .
+SFX I 0 o [^aeêiîouû] .
+SFX I 0 ya [aeêiîouû] .
+SFX I 0 yî [aeêiîouû] .
+SFX I 0 ye [aeêiîouû] .
+SFX I 0 yêne [aeêiîouû] .
+SFX I 0 yê [aeêiîouû] .
+SFX I 0 yo [aeêiîouû] .
+SFX I 0 bîya [^b] .
+SFX I 0 bîyî [^b] .
+SFX I 0 bîye [^b] .
+SFX I 0 bî [^b] .
+SFX I 0 bîyê [^b] .
+SFX I 0 bîyo [^b] .
+SFX I 0 ibîya [b] .
+SFX I 0 ibîyî [b] .
+SFX I 0 ibîye [b] .
+SFX I 0 ibî [b] .
+SFX I 0 ibîyê [b] .
+SFX I 0 ibîyo [b] .
+SFX I 0 yo a$
+SFX I 0 ya a$
+SFX I 0 ye a$
+SFX I 0 yê a$
+SFX I 0 ne a$
+SFX I 0 bî .
+SFX I 0 bi .
+SFX I 0 yî a$
+SFX I 0 me a$
+SFX I 0 yû a$
+SFX I 0 yi a$
+SFX I 0 vî .
+SFX I 0 bo .
+SFX I 0 bê a$
+SFX I 0 mî a$
+SFX I 0 bîy .
+SFX I 0 ybî a$
+SFX I 0 yên a$
+SFX I 0 ynî a$
+SFX I 0 ynê a$
+SFX I 0 yêr e$
+SFX I 0 yne a$
+SFX I 0 yêne a$
+SFX I 0 bîya .
+SFX I 0 yênê a$
+SFX I 0 yîme a$
+SFX I 0 yaye a$
+SFX I 0 bîyî .
+SFX I 0 yayo a$
+SFX I 0 yayê a$
+SFX I 0 bîme .
+SFX I 0 bîye .
+SFX I 0 yayi a$
+SFX I 0 yayî a$
+SFX I 0 yebî a$
+SFX I 0 yemê a$
+SFX I 0 yêbî a$
+SFX I 0 yînê a$
+SFX I 0 yîşa a$
+SFX I 0 yîşê a$
+SFX I 0 yûnê a$
+SFX I 0 yûnî a$
+SFX I 0 yayîş a$
+SFX I 0 yayiş a$
+SFX I i î i$
+
+
+PFX T Y 179
+PFX T 0 nê . 
+PFX T 0 bi . 
+PFX T 0 a [^aeêiîouû] .
+PFX T 0 nê [^aeêiîouû] .
+PFX T 0 pê [^aeêiîouû] .
+PFX T 0 ni [^aeêiîouû] .
+PFX T 0 de [^aeêiîouû] .
+PFX T 0 nî [^aeêiîouû] .
+PFX T 0 ra [^aeêiîouû] .
+PFX T 0 ci [^aeêiîouû] .
+PFX T 0 pa [^aeêiîouû] .
+PFX T 0 we [^aeêiîouû] .
+PFX T 0 ro [^aeêiîouû] .
+PFX T 0 ca [^aeêiîouû] .
+PFX T 0 pe [^aeêiîouû] .
+PFX T 0 se [^aeêiîouû] .
+PFX T 0 ve [^aeêiîouû] .
+PFX T 0 şe [^aeêiîouû] .
+PFX T 0 bi [^aeêiîouû] .
+PFX T 0 ya [^aeêiîouû] .
+PFX T 0 anê [^aeêiîouû] .
+PFX T 0 to [^aeêiîouû] .
+PFX T 0 bar [^aeêiîouû] .
+PFX T 0 doz [^aeêiîouû] .
+PFX T 0 fam [^aeêiîouû] .
+PFX T 0 nêa [^aeêiîouû] .
+PFX T 0 nîa [^aeêiîouû] .
+PFX T 0 pey [^aeêiîouû] .
+PFX T 0 çap [^aeêiîouû] .
+PFX T 0 bese [^aeêiîouû] .
+PFX T 0 hes [^aeêiîouû] .
+PFX T 0 arê [^aeêiîouû] .
+PFX T 0 ef [^aeêiîouû] .
+PFX T 0 es [^aeêiîouû] .
+PFX T 0 me [^aeêiîouû] .
+PFX T 0 nas [^aeêiîouû] .
+PFX T 0 pênê [^aeêiîouû] .
+PFX T 0 qut [^aeêiîouû] .
+PFX T 0 rêz [^aeêiîouû] .
+PFX T 0 sûr [^aeêiîouû] .
+PFX T 0 utî [^aeêiîouû] .
+PFX T 0 cam [^aeêiîouû] .
+PFX T 0 cax [^aeêiîouû] .
+PFX T 0 dên [^aeêiîouû] .
+PFX T 0 hal [^aeêiîouû] .
+PFX T 0 kay [^aeêiîouû] .
+PFX T 0 kê [^aeêiîouû] .
+PFX T 0 la [^aeêiîouû] .
+PFX T 0 mor [^aeêiîouû] .
+PFX T 0 ne [^aeêiîouû] .
+PFX T 0 neşr [^aeêiîouû] .
+PFX T 0 nîye [^aeêiîouû] .
+PFX T 0 pak [^aeêiîouû] .
+PFX T 0 pan [^aeêiîouû] .
+PFX T 0 qat [^aeêiîouû] .
+PFX T 0 qir [^aeêiîouû] .
+PFX T 0 qul [^aeêiîouû] .
+PFX T 0 qum [^aeêiîouû] .
+PFX T 0 ranê [^aeêiîouû] .
+PFX T 0 ray [^aeêiîouû] .
+PFX T 0 ref [^aeêiîouû] .
+PFX T 0 sur [^aeêiîouû] .
+PFX T 0 sîm [^aeêiîouû] .
+PFX T 0 wenê [^aeêiîouû] .
+PFX T 0 çe [^aeêiîouû] .
+PFX T 0 çît [^aeêiîouû] .
+PFX T 0 çima [^aeêiîouû] .
+PFX T 0 feka [^aeêiîouû] .
+PFX T 0 hîs [^aeêiîouû] .
+PFX T 0 qeyd [^aeêiîouû] .
+PFX T 0 nîyê [^aeêiîouû] .
+PFX T 0 vîn [^aeêiîouû] .
+PFX T 0 belî [^aeêiîouû] .
+PFX T 0 dua [^aeêiîouû] .
+PFX T 0 fûm [^aeêiîouû] .
+PFX T 0 kaş [^aeêiîouû] .
+PFX T 0 qal [^aeêiîouû] .
+PFX T 0 saz [^aeêiîouû] .
+PFX T 0 are [^aeêiîouû] .
+PFX T 0 belû [^aeêiîouû] .
+PFX T 0 dard [^aeêiîouû] .
+PFX T 0 hel [^aeêiîouû] .
+PFX T 0 kar [^aeêiîouû] .
+PFX T 0 lone [^aeêiîouû] .
+PFX T 0 maç [^aeêiîouû] .
+PFX T 0 nêma [^aeêiîouû] .
+PFX T 0 plan [^aeêiîouû] .
+PFX T 0 qule [^aeêiîouû] .
+PFX T 0 sera [^aeêiîouû] .
+PFX T 0 xêz [^aeêiîouû] .
+PFX T 0 şaş [^aeêiîouû] .
+PFX T 0 awan [^aeêiîouû] .
+PFX T 0 belu [^aeêiîouû] .
+PFX T 0 boy [^aeêiîouû] .
+PFX T 0 buya [^aeêiîouû] .
+PFX T 0 bî [^aeêiîouû] .
+PFX T 0 celb [^aeêiîouû] .
+PFX T 0 defn [^aeêiîouû] .
+PFX T 0 deni [^aeêiîouû] .
+PFX T 0 denê [^aeêiîouû] .
+PFX T 0 dera [^aeêiîouû] .
+PFX T 0 efû [^aeêiîouû] .
+PFX T 0 far [^aeêiîouû] .
+PFX T 0 anê .
+PFX T 0 danê .
+PFX T 0 denê .
+PFX T 0 panê .
+PFX T 0 ponê .
+PFX T 0 ranê .
+PFX T 0 ronê .
+PFX T 0 tanê .
+PFX T 0 tonê .
+PFX T 0 wenê .
+PFX T 0 pênê .
+PFX T 0 nêa .
+PFX T 0 nêda .
+PFX T 0 nêde .
+PFX T 0 nêpa .
+PFX T 0 nêpo .
+PFX T 0 nêra .
+PFX T 0 nêro .
+PFX T 0 nêta .
+PFX T 0 nêto .
+PFX T 0 nêwe .
+PFX T 0 nêpê .
+PFX T 0 a .
+PFX T 0 da .
+PFX T 0 de .
+PFX T 0 pa .
+PFX T 0 po .
+PFX T 0 ra .
+PFX T 0 ro .
+PFX T 0 ta .
+PFX T 0 to .
+PFX T 0 we .
+PFX T 0 mea .
+PFX T 0 meda .
+PFX T 0 mede .
+PFX T 0 mepa .
+PFX T 0 mepo .
+PFX T 0 mera .
+PFX T 0 mero .
+PFX T 0 meta .
+PFX T 0 meto .
+PFX T 0 mewe .
+PFX T 0 mepê .
+PFX T 0 ame .
+PFX T 0 dame .
+PFX T 0 deme .
+PFX T 0 pame .
+PFX T 0 pome .
+PFX T 0 rame .
+PFX T 0 rome .
+PFX T 0 tame .
+PFX T 0 tome .
+PFX T 0 weme .
+PFX T 0 pême .
+PFX T 0 bia .
+PFX T 0 bida .
+PFX T 0 bide .
+PFX T 0 bipa .
+PFX T 0 bipo .
+PFX T 0 bira .
+PFX T 0 biro .
+PFX T 0 bita .
+PFX T 0 bito .
+PFX T 0 biwe .
+PFX T 0 bipê .
+PFX T 0 abi .
+PFX T 0 dabi .
+PFX T 0 debi .
+PFX T 0 pabi .
+PFX T 0 pobi .
+PFX T 0 rabi .
+PFX T 0 robi .
+PFX T 0 tabi .
+PFX T 0 tobi .
+PFX T 0 webi .
+PFX T 0 pêbi .
+
+
+SFX T Y 109
+SFX T 0 e [^aeêiîouû] .
+SFX T 0 î [^aeêiîouû] .
+SFX T 0 êne [^aeêiîouû] .
+SFX T 0 o [^aeêiîouû] .
+SFX T 0 a [^aeêiîouû] .
+SFX T 0 ê [^aeêiîouû] .
+SFX T 0 ye [aeêiîouû] .
+SFX T 0 yî [aeêiîouû] .
+SFX T 0 yêne [aeêiîouû] .
+SFX T 0 yo [aeêiîouû] .
+SFX T 0 ya [aeêiîouû] .
+SFX T 0 yê [aeêiîouû] .
+SFX T 0 bîyo [^b] .
+SFX T 0 bîya [^b] .
+SFX T 0 bîyê [^b] .
+SFX T 0 bî [^b] .
+SFX T 0 bîy [^b] .
+SFX T 0 ibîyo [b] .
+SFX T 0 ibîya [b] .
+SFX T 0 ibîyê [b] .
+SFX T 0 ibî [b] .
+SFX T 0 ibîy [b] .
+SFX T 0 i [^aeêiîouû] .
+SFX T 0 û [^aeêiîouû] .
+SFX T 0 u [^aeêiîouû] .
+SFX T 0 iş [^aeêiîouû] .
+SFX T 0 ên [^aeêiîouû] .
+SFX T 0 bi [^aeêiîouû] .
+SFX T 0 bî [^aeêiîouû] .
+SFX T 0 în [^aeêiîouû] .
+SFX T 0 îy [^aeêiîouû] .
+SFX T 0 ox [^aeêiîouû] .
+SFX T 0 en [^aeêiîouû] .
+SFX T 0 nî [^aeêiîouû] .
+SFX T 0 ib [^aeêiîouû] .
+SFX T 0 in [^aeêiîouû] .
+SFX T 0 me [^aeêiîouû] .
+SFX T 0 be [^aeêiîouû] .
+SFX T 0 ey [^aeêiîouû] .
+SFX T 0 vî [^aeêiîouû] .
+SFX T 0 îv [^aeêiîouû] .
+SFX T 0 er [^aeêiîouû] .
+SFX T 0 nê [^aeêiîouû] .
+SFX T 0 îb [^aeêiîouû] .
+SFX T 0 îm [^aeêiîouû] .
+SFX T 0 îş [^aeêiîouû] .
+SFX T 0 ûn [^aeêiîouû] .
+SFX T 0 ene [^aeêiîouû] .
+SFX T 0 inî [^aeêiîouû] .
+SFX T 0 îbî [^aeêiîouû] .
+SFX T 0 ibi [^aeêiîouû] .
+SFX T 0 ibî [^aeêiîouû] .
+SFX T 0 ênî [^aeêiîouû] .
+SFX T 0 enî [^aeêiîouû] .
+SFX T 0 ênê [^aeêiîouû] .
+SFX T 0 îme [^aeêiîouû] .
+SFX T 0 înî [^aeêiîouû] .
+SFX T 0 êni [^aeêiîouû] .
+SFX T 0 işê [^aeêiîouû] .
+SFX T 0 enê [^aeêiîouû] .
+SFX T 0 inê [^aeêiîouû] .
+SFX T 0 îvî [^aeêiîouû] .
+SFX T 0 ena [^aeêiîouû] .
+SFX T 0 işî [^aeêiîouû] .
+SFX T 0 ebî [^aeêiîouû] .
+SFX T 0 ine [^aeêiîouû] .
+SFX T 0 bîy [^aeêiîouû] .
+SFX T 0 ûne [^aeêiîouû] .
+SFX T 0 oxê [^aeêiîouû] .
+SFX T 0 ibe [^aeêiîouû] .
+SFX T 0 oxî [^aeêiîouû] .
+SFX T 0 eni [^aeêiîouû] .
+SFX T 0 îni [^aeêiîouû] .
+SFX T 0 ane [^aeêiîouû] .
+SFX T 0 aye [^aeêiîouû] .
+SFX T 0 eyê [^aeêiîouû] .
+SFX T 0 eyî [^aeêiîouû] .
+SFX T 0 ivî [^aeêiîouû] .
+SFX T 0 îbi [^aeêiîouû] .
+SFX T 0 ere [^aeêiîouû] .
+SFX T 0 ime [^aeêiîouû] .
+SFX T 0 une [^aeêiîouû] .
+SFX T 0 éne [^aeêiîouû] .
+SFX T 0 êbi [^aeêiîouû] .
+SFX T 0 êbî [^aeêiîouû] .
+SFX T 0 îbê [^aeêiîouû] .
+SFX T 0 îne [^aeêiîouû] .
+SFX T 0 înê [^aeêiîouû] .
+SFX T 0 îyen [^aeêiîouû] .
+SFX T 0 ibîy [^aeêiîouû] .
+SFX T 0 îbîy [^aeêiîouû] .
+SFX T 0 îyên [^aeêiîouû] .
+SFX T 0 bîya [^aeêiîouû] .
+SFX T 0 enan [^aeêiîouû] .
+SFX T 0 işan [^aeêiîouû] .
+SFX T 0 biya [^aeêiîouû] .
+SFX T 0 bîyo [^aeêiîouû] .
+SFX T 0 bîyî [^aeêiîouû] .
+SFX T 0 iney [^aeêiîouû] .
+SFX T 0 oxan [^aeêiîouû] .
+SFX T 0 îyenî [^aeêiîouû] .
+SFX T 0 işanê [^aeêiîouû] .
+SFX T 0 îyeni [^aeêiîouû] .
+SFX T 0 ibîya [^aeêiîouû] .
+SFX T 0 enanê [^aeêiîouû] .
+SFX T 0 eyanê [^aeêiîouû] .
+SFX T 0 ibîyê [^aeêiîouû] .
+SFX T 0 ibîyî [^aeêiîouû] .
+SFX T 0 işîya [^aeêiîouû] .
+
+
+
+PFX W Y 79
+PFX W 0 bi . 
+PFX W 0 nê . 
+PFX W 0 me . 
+PFX W 0 anê .
+PFX W 0 danê .
+PFX W 0 denê .
+PFX W 0 panê .
+PFX W 0 ponê .
+PFX W 0 ranê .
+PFX W 0 ronê .
+PFX W 0 tanê .
+PFX W 0 tonê .
+PFX W 0 wenê .
+PFX W 0 pênê .
+PFX W 0 nêa .
+PFX W 0 nêda .
+PFX W 0 nêde .
+PFX W 0 nêpa .
+PFX W 0 nêpo .
+PFX W 0 nêra .
+PFX W 0 nêro .
+PFX W 0 nêta .
+PFX W 0 nêto .
+PFX W 0 nêwe .
+PFX W 0 nêpê .
+PFX W 0 a .
+PFX W 0 da .
+PFX W 0 de .
+PFX W 0 pa .
+PFX W 0 po .
+PFX W 0 ra .
+PFX W 0 ro .
+PFX W 0 ta .
+PFX W 0 to .
+PFX W 0 we .
+PFX W 0 mea .
+PFX W 0 meda .
+PFX W 0 mede .
+PFX W 0 mepa .
+PFX W 0 mepo .
+PFX W 0 mera .
+PFX W 0 mero .
+PFX W 0 meta .
+PFX W 0 meto .
+PFX W 0 mewe .
+PFX W 0 mepê .
+PFX W 0 ame .
+PFX W 0 dame .
+PFX W 0 deme .
+PFX W 0 pame .
+PFX W 0 pome .
+PFX W 0 rame .
+PFX W 0 rome .
+PFX W 0 tame .
+PFX W 0 tome .
+PFX W 0 weme .
+PFX W 0 pême .
+PFX W 0 bia .
+PFX W 0 bida .
+PFX W 0 bide .
+PFX W 0 bipa .
+PFX W 0 bipo .
+PFX W 0 bira .
+PFX W 0 biro .
+PFX W 0 bita .
+PFX W 0 bito .
+PFX W 0 biwe .
+PFX W 0 bipê .
+PFX W 0 abi .
+PFX W 0 dabi .
+PFX W 0 debi .
+PFX W 0 pabi .
+PFX W 0 pobi .
+PFX W 0 rabi .
+PFX W 0 robi .
+PFX W 0 tabi .
+PFX W 0 tobi .
+PFX W 0 webi .
+PFX W 0 pêbi .
+ 
+
+SFX W Y 5
+SFX W 0 a .
+SFX W 0 o .
+SFX W 0 ê .
+SFX W 0 e .
+SFX W 0 î .
+
+
+
+##########################################################################################
+# END OF MORPHOLOGICAL RULES FOR NOUNS, VERBS, ADJECTIVES AND ADVERBS
+##########################################################################################
+
+
+
+
+############################### Numerals###################################################
+
+# Number compounding rule allowing digit repetition
+
+SFX E Y 19
+SFX E 0 0 [0-9]
+SFX E 0 in [^aeêiîouû] .
+SFX E 0 ini [^aeêiîouû] .
+SFX E 0 ina [^aeêiîouû] .
+SFX E 0 inan [^aeêiîouû] .
+SFX E 0 ine [^aeêiîouû] .
+SFX E 0 inê [^aeêiîouû] .
+SFX E 0 inî [^aeêiîouû] .
+SFX E 0 yin [aeêiîouû] .
+SFX E 0 yina [aeêiîouû] .
+SFX E 0 yinan [aeêiîouû] .
+SFX E 0 yine [aeêiîouû] .
+SFX E 0 yinê [aeêiîouû] .
+SFX E 0 yinî [aeêiîouû] .
+SFX E i îyin .
+SFX E i îyina .
+SFX E i îyinan .
+SFX E i îyinê .
+SFX E i îyinî .
+
+############################ ADPOSITIONS' ‘EZAFE’#########################################
+
+
+
+#SFX P Y 2
+#SFX P 0 ê [^aeêiîouû] .
+#SFX P 0 yê [aeêiîouû] .
+
+
+############################ PRONOUN' ‘OBLIQE’############################################
+
+
+SFX B Y 5
+SFX B 0 i [^aeêiîouû] .
+SFX B 0 î [^aeêiîouû] .
+SFX B 0 e [^aeêiîouû] .
+SFX B 0 an [^aeêiîouû] .
+SFX B 0 anê [^aeêiîouû] .
+
+
+
+############################ PUNCTUATION##################################################
+
+
+#PFX H Y 1
+#PFX H 0 1
+
+#SFX H Y 1
+#SFX H 0 1
+
+
+
+############################ LOCATION ##################################################
+
+
+#SFX J Y 4
+#SFX J 0 ij [^aeêiîouû] sfx:-ij_attributive .
+#SFX J 0 yij [aêîouû] sfx:-ij_attributive .
+#SFX J e ij e sfx:-ij sfx:-ij_attributive .
+#SFX J i ij i sfx:-ij sfx:-ij_attributive .
+
+
+# END OF AFF FILE
+# ========================================================================================
+# Copyright 2025 Veysel YILDIZHAN <vyildizhan@outlook.com> and Sina Ahmadi <ahmadi.sina@outlook.com>
+# ========================================================================================
+
+
+
+
+
