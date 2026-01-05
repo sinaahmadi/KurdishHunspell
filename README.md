@@ -1,5 +1,6 @@
 # Hunspell for Kurdish
-## A morphological analyzer and spell checker for Kurdish in Hunspell (Sorani and Kurmanji)
+## A morphological analyzer and spell checker for Kurdish in Hunspell
+### Currently supporting Sorani (ckb), Kurmanji (kmr) and Zazaki (zza)
 ---
 
 ### Latest update on January 5th, 2026:
